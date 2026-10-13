@@ -1,0 +1,17 @@
+import Image from "next/image";
+
+const Circles = () => {
+  return (
+    <div className="hidden xl:block w-75 absolute -right-16 -bottom-2 mix-blend-color-dodge animate-pulse duration-75 z-10 pointer-events-none" aria-hidden>
+      <Image
+        src="/circles.png"
+        alt="circles"
+        width={260}
+        height={200}
+        className="w-full h-full"
+      />
+    </div>
+  );
+};
+
+export default Circles;
