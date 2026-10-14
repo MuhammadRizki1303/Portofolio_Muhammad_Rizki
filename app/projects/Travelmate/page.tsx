@@ -18,7 +18,7 @@ const screenshots = [
 
 const TravelmatePage = () => {
   return (
-    <div className="min-h-full bg-primary/30 py-24 xl:py-36 overflow-y-auto pb-24 xl:pb-0">
+    <div className="page-scroll min-h-full bg-primary/30 py-24 xl:py-36 overflow-y-auto pb-24 xl:pb-0">
       <Circles />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
