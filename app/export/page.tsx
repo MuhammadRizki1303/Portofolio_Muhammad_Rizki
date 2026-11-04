@@ -56,10 +56,10 @@ export default function ExportPage() {
             </Link>
             <div>
               <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                Dokumen Resmi & Export <span className="text-accent">Portofolio (6 Halaman)</span>
+                Dokumen Resmi & Export <span className="text-accent">Portofolio (6 Halaman Landscape)</span>
               </h2>
               <p className="text-xs text-white/60">
-                Format editorial multi-halaman lengkap: 1 Cover & Profil, 4 Showcase Proyek Lengkap, dan 1 Halaman Sertifikasi & Lisensi Resmi.
+                Format editorial A4 landscape: 1 Cover & Profil, 4 Showcase Proyek Lengkap, dan 1 Halaman Sertifikasi & Lisensi Resmi.
               </p>
             </div>
           </div>
@@ -95,14 +95,14 @@ export default function ExportPage() {
           <span>
             💡 <strong>Panduan Cetak Browser:</strong> Pada dialog print, pilih Destination: <em>Save as PDF</em> • Paper: <em>A4</em> • Margins: <em>Default</em> • Centang <em>Background graphics</em>.
           </span>
-          <span className="text-accent font-semibold">Tepat 6 Halaman A4 • Gambar Lengkap & Jernih</span>
+          <span className="text-accent font-semibold">Tepat 6 Halaman A4 Landscape • Gambar Lengkap & Jernih</span>
         </div>
       </div>
 
       {/* ============================================================== */}
       {/* 6-PAGE EDITORIAL PORTOFOLIO DOCUMENT CONTAINER                 */}
       {/* ============================================================== */}
-      <div className="container mx-auto px-4 relative z-10 max-w-5xl space-y-8 print:space-y-0">
+      <div className="container mx-auto px-4 relative z-10 max-w-6xl space-y-8 print:space-y-0">
 
         {/* ------------------------------------------------------------ */}
         {/* HALAMAN 1: COVER, EXECUTIVE SUMMARY, BIO & CORE COMPETENCIES */}

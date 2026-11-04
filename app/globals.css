@@ -110,8 +110,8 @@
 
 @media print {
   @page {
-    size: A4 portrait;
-    margin: 10mm 12mm;
+    size: A4 landscape;
+    margin: 8mm 10mm;
   }
 
   body, html {
@@ -119,8 +119,8 @@
     height: auto !important;
     background: white !important;
     color: #111827 !important;
-    font-size: 13px !important;
-    line-height: 1.5 !important;
+    font-size: 11px !important;
+    line-height: 1.35 !important;
   }
 
   .page {
@@ -141,13 +141,16 @@
   .portfolio-page {
     page-break-after: always !important;
     break-after: page !important;
-    min-height: 255mm !important;
-    height: auto !important;
+    min-height: 194mm !important;
+    height: 194mm !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
     box-sizing: border-box !important;
-    padding-bottom: 5mm !important;
+    overflow: hidden !important;
+    padding: 7mm !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
   .portfolio-page:last-child {
@@ -158,6 +161,40 @@
   .break-inside-avoid {
     break-inside: avoid !important;
     page-break-inside: avoid !important;
+  }
+
+  .portfolio-page h1 {
+    font-size: 24px !important;
+  }
+
+  .portfolio-page h2 {
+    font-size: 20px !important;
+  }
+
+  .portfolio-page h3 {
+    font-size: 14px !important;
+  }
+
+  .portfolio-page h4 {
+    font-size: 11px !important;
+  }
+
+  .portfolio-page p,
+  .portfolio-page li {
+    font-size: 10px !important;
+    line-height: 1.35 !important;
+  }
+
+  .portfolio-page .text-xs {
+    font-size: 9px !important;
+  }
+
+  .portfolio-page .text-\[11px\] {
+    font-size: 9px !important;
+  }
+
+  .portfolio-page .text-\[10px\] {
+    font-size: 8px !important;
   }
 
   img {
