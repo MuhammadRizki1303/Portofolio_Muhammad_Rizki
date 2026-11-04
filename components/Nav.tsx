@@ -11,6 +11,7 @@ import {
   HiDocumentCheck,
   HiEnvelope,
   HiArrowDownTray,
+  HiBriefcase,
 } from "react-icons/hi2";
 
 export const navData: { name: string; path: string; Icon: IconType }[] = [
@@ -18,6 +19,7 @@ export const navData: { name: string; path: string; Icon: IconType }[] = [
   { name: "about", path: "/about", Icon: HiUser },
   { name: "services", path: "/services", Icon: HiRectangleGroup },
   { name: "work", path: "/work", Icon: HiViewColumns },
+  { name: "experience", path: "/experience", Icon: HiBriefcase },
   { name: "sertifikat", path: "/sertifikat", Icon: HiDocumentCheck },
   {
     name: "export & cv",
@@ -37,7 +39,7 @@ const Nav = () => {
   return (
     <nav
       aria-label="Navigasi utama"
-      className="fixed inset-x-0 bottom-0 z-50 xl:inset-y-0 xl:left-auto xl:right-[2%] xl:flex xl:h-screen xl:w-20 xl:flex-col xl:items-center xl:justify-center"
+      className="fixed inset-x-0 bottom-0 z-50 xl:inset-y-0 xl:left-auto xl:right-[2%] xl:flex xl:h-screen xl:w-20 xl:translate-y-12 xl:flex-col xl:items-center xl:justify-center"
     >
       <div className="flex min-h-16 w-full items-center justify-between gap-0 border-t border-white/10 bg-primary/95 px-1.5 pt-1.5 pb-[env(safe-area-inset-bottom)] text-xl backdrop-blur-lg sm:px-3 xl:h-max xl:w-16 xl:flex-col xl:justify-center xl:gap-y-10 xl:overflow-visible xl:rounded-full xl:border-0 xl:bg-white/10 xl:px-0 xl:py-8 xl:text-2xl">
         {navData.map((link) => (

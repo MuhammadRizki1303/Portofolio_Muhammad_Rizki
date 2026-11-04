@@ -21,12 +21,14 @@ import type { IconType } from "react-icons";
 
 import Avatar from "@/components/Avatar";
 import Circles from "@/components/Circles";
+import { experiences } from "@/lib/experience";
 import { fadeIn } from "@/variants";
 
 type AboutInfoItem = {
   title: string;
   stage?: string;
   icons?: IconType[];
+  href?: string;
 };
 
 type AboutDataItem = {
@@ -52,16 +54,14 @@ const aboutData: AboutDataItem[] = [
     title: "pengalaman",
     info: [
       {
-        title: "IT Support Specialist (Intern) - PT. Yageo TMSS Indonesia",
-        stage: "Jul 2025 - Apr 2026",
+        title: experiences[0].position + " - " + experiences[0].company,
+        stage: experiences[0].period,
+        href: `/experience/${experiences[0].slug}`,
       },
       {
-        title: "Machine Learning Cohort - DBS Foundation Coding Camp",
-        stage: "Jan 2025 - Jun 2025",
-      },
-      {
-        title: "Hardware & IT Support (Intern) - SIMBADDA Technology",
-        stage: "Jan 2020 - Jun 2020",
+        title: experiences[1].position + " - " + experiences[1].company,
+        stage: experiences[1].period,
+        href: `/experience/${experiences[1].slug}`,
       },
     ],
   },
@@ -228,22 +228,35 @@ const About = () => {
 
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemI) => (
-              <div
-                key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
-              >
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
+              item.href ? (
+                <Link
+                  key={itemI}
+                  href={item.href}
+                  className="group flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60 rounded-lg px-3 py-2 -mx-3 transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-accent"
+                >
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
+                  <BsArrowRight className="ml-1 text-accent transition-transform group-hover:translate-x-1" />
+                </Link>
+              ) : (
+                <div
+                  key={itemI}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                >
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
 
-                <div className="flex gap-x-4">
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
+                  <div className="flex gap-x-4">
+                    {item.icons?.map((Icon, iconI) => (
+                      <div key={iconI} className="text-2xl text-white">
+                        <Icon />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )
             ))}
 
             {aboutData[index].title === "sertifikasi" && (

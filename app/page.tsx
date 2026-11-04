@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="bg-primary/60 min-h-screen xl:h-full">
       <div className="w-full min-h-screen xl:h-full bg-linear-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left min-h-screen xl:h-full container mx-auto pt-24 pb-24 xl:pb-0 px-4">
+        <div className="text-center flex flex-col justify-center xl:pt-56 xl:text-left min-h-screen xl:h-full container mx-auto pt-24 pb-24 xl:pb-0 px-4">
           {/* Avatar for Mobile & Tablet (Transparent Cutout) */}
           <motion.div
             variants={fadeIn("down", 0.2)}
