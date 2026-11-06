@@ -13,9 +13,9 @@ import { fadeIn } from "@/variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 min-h-screen xl:h-full">
-      <div className="w-full min-h-screen xl:h-full bg-linear-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-72 xl:text-left min-h-screen xl:h-full container mx-auto pt-32 pb-24 xl:pb-0 px-4">
+    <div className="relative isolate min-h-[calc(100svh-4.5rem)] overflow-hidden bg-primary/60 xl:min-h-screen xl:h-full">
+      <div className="relative z-10 w-full min-h-[calc(100svh-4.5rem)] bg-linear-to-r from-primary/10 via-black/30 to-black/10 xl:min-h-screen xl:h-full">
+        <div className="container mx-auto flex min-h-[calc(100svh-4.5rem)] flex-col justify-center px-4 pt-24 pb-10 text-center xl:min-h-screen xl:h-full xl:pt-72 xl:pb-0 xl:text-left">
           {/* Avatar for Mobile & Tablet (Transparent Cutout) */}
           <motion.div
             variants={fadeIn("down", 0.2)}
@@ -107,7 +107,7 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-full xl:w-[1200px] h-full absolute right-0 bottom-0 pointer-events-none">
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full xl:right-0 xl:bottom-0 xl:w-[1200px]">
         <div
           role="img"
           className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"

@@ -106,7 +106,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="min-h-screen bg-primary/30 py-24 xl:py-32 text-center xl:text-left pb-24 xl:pb-0">
+    <div className="relative isolate min-h-[calc(100svh-4.5rem)] overflow-hidden bg-primary/30 px-0 py-24 pb-24 text-center xl:min-h-screen xl:py-32 xl:pb-0 xl:text-left">
       <Circles />
 
       <motion.div
@@ -123,7 +123,7 @@ const About = () => {
         />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative z-10 xl:pl-[360px] 2xl:pl-[440px] xl:pr-32 2xl:pr-40">
+      <div className="container relative z-10 mx-auto flex h-full flex-col items-center gap-x-6 xl:flex-row xl:pl-[360px] 2xl:pl-[440px] xl:pr-32 2xl:pr-40">
         <div className="flex-1 flex flex-col justify-center">
           {/* Avatar for Mobile & Tablet (Transparent Cutout) */}
           <motion.div
