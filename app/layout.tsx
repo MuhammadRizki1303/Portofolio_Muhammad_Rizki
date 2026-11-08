@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Muhammad Rizki" }],
   other: {
-    "theme-color": "#f13024",
+    "theme-color": "#081827",
   },
 };
 

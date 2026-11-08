@@ -151,10 +151,6 @@ const ContactFormContent = ({
         }),
       });
 
-      const data = (await response.json().catch(() => null)) as {
-        error?: string;
-      } | null;
-
       if (!response.ok) {
         // Fallback jika API backend belum dikonfigurasi Resend
         const mailtoUrl = `mailto:muhammad.rizki1303@gmail.com?subject=${encodeURIComponent(

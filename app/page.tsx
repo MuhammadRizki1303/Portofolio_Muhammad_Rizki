@@ -9,39 +9,29 @@ const ParticlesContainer = dynamic(
 );
 import ProjectsBtn from "@/components/ProjectsBtn";
 import Avatar from "@/components/Avatar";
+import About from "@/app/about/page";
+import Services from "@/app/services/page";
+import Work from "@/app/work/page";
+import ExperiencePage from "@/app/experience/page";
+import SertifikatPage from "@/app/sertifikat/page";
+import Contact from "@/app/contact/page";
 import { fadeIn } from "@/variants";
 
 const Home = () => {
   return (
-    <div className="relative isolate min-h-[calc(100svh-4.5rem)] overflow-hidden bg-primary/60 xl:min-h-screen xl:h-full">
-      <div className="relative z-10 w-full min-h-[calc(100svh-4.5rem)] bg-linear-to-r from-primary/10 via-black/30 to-black/10 xl:min-h-screen xl:h-full">
-        <div className="container mx-auto flex min-h-[calc(100svh-4.5rem)] flex-col justify-center px-4 pt-24 pb-10 text-center xl:min-h-screen xl:h-full xl:pt-72 xl:pb-0 xl:text-left">
-          {/* Avatar for Mobile & Tablet (Transparent Cutout) */}
-          <motion.div
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="xl:hidden flex justify-center mb-6"
-          >
-            <div className="w-40 h-40 md:w-52 md:h-52 relative">
-              <Avatar
-                className="w-full h-full flex items-center justify-center filter drop-shadow-[0_10px_25px_rgba(241,48,36,0.25)]"
-                imageClassName="object-contain"
-                priority
-              />
-            </div>
-          </motion.div>
-
+    <main>
+      <section id="home" className="home-shell relative isolate min-h-screen overflow-hidden xl:min-h-screen xl:h-full">
+        <div className="relative z-10 w-full min-h-[calc(100svh-4.5rem)] bg-linear-to-r from-primary/5 via-transparent to-accent/5 xl:min-h-screen xl:h-full">
+          <div className="container mx-auto flex min-h-screen flex-col justify-center px-4 pb-20 pt-32 text-center sm:px-8 xl:min-h-screen xl:h-full xl:pb-0 xl:pt-56 xl:text-left">
           <motion.div
             variants={fadeIn("down", 0.15)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="inline-flex items-center gap-x-2 bg-white/5 border border-accent/30 rounded-full px-4 py-1.5 mb-3 text-xs tracking-wide text-white/90 font-medium w-fit mx-auto xl:mx-0 shadow-sm"
+            className="mx-auto mb-5 inline-flex w-fit items-center gap-x-2 rounded-full border border-accent/25 bg-accent/5 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-accent shadow-sm xl:mx-0"
           >
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span>Lulusan D4 Teknik Informatika • IPK 3.87 (Cum Laude)</span>
+            <span>AI-assisted software engineer · Indonesia</span>
           </motion.div>
 
           <motion.h1
@@ -60,7 +50,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-base md:text-xl font-semibold text-white/80 mb-4 tracking-wide"
+            className="mb-5 text-base font-medium tracking-wide text-white/70 md:text-xl"
           >
             Software Engineer <span className="text-accent">&</span> AI Enthusiast
           </motion.div>
@@ -70,7 +60,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-6 xl:mb-8 text-white/75 text-sm md:text-[15px] leading-relaxed"
+            className="mx-auto mb-7 max-w-sm text-sm leading-relaxed text-white/60 md:text-[15px] xl:mx-0 xl:mb-8 xl:max-w-xl"
           >
             Lulusan Sarjana Terapan Teknik Informatika dengan predikat Cum Laude (IPK 3.87).
             Berfokus pada rekayasa perangkat lunak modern, pengembangan Full-Stack Web, dan
@@ -85,12 +75,29 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-wrap gap-2 justify-center xl:justify-start mb-8 xl:mb-10 text-xs text-white/70"
+            className="mb-8 flex flex-wrap justify-center gap-2 text-[11px] text-white/60 xl:mb-10 xl:justify-start"
           >
-            <span className="bg-white/5 border border-white/10 px-3 py-1 rounded-md">Full-Stack Web Dev</span>
-            <span className="bg-white/5 border border-white/10 px-3 py-1 rounded-md">Machine Learning & CNN</span>
-            <span className="bg-white/5 border border-white/10 px-3 py-1 rounded-md">IT Infrastructure</span>
-            <span className="bg-accent/10 border border-accent/30 text-accent font-medium px-3 py-1 rounded-md">IPK 3.87 (Cum Laude)</span>
+            <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">Full-Stack Web</span>
+            <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">Machine Learning</span>
+            <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">IT Infrastructure</span>
+            <span className="rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 font-medium text-accent">IPK 3.87 · Cum Laude</span>
+          </motion.div>
+
+          {/* Keep the profile visual below the main message on smaller screens. */}
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="mb-6 flex justify-center xl:hidden"
+          >
+            <div className="relative h-36 w-36 md:h-44 md:w-44">
+              <Avatar
+                className="flex h-full w-full items-center justify-center drop-shadow-[0_10px_25px_rgba(34,211,238,0.18)]"
+                imageClassName="object-contain"
+                priority
+              />
+            </div>
           </motion.div>
 
           <div className="flex justify-center xl:hidden relative">
@@ -105,33 +112,53 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.div>
+          </div>
         </div>
-      </div>
-      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full xl:right-0 xl:bottom-0 xl:w-[1200px]">
-        <div
-          role="img"
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-          aria-hidden
-        />
-
-        <ParticlesContainer />
-
-        <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="hidden xl:flex w-full h-full max-w-[550px] max-h-[550px] 2xl:max-w-[650px] 2xl:max-h-[650px] absolute bottom-0 right-[4%] 2xl:right-[8%] items-end justify-center pointer-events-none z-10"
-        >
-          <Avatar
-            className="w-full h-full flex items-end justify-center mix-blend-multiply"
-            imageClassName="object-contain object-bottom"
-            priority
+        <div className="pointer-events-none absolute inset-0 z-0 h-full w-full xl:right-0 xl:bottom-0 xl:w-[1200px]">
+          <div
+            role="img"
+            className="home-explosion w-full h-full absolute mix-blend-screen opacity-80 translate-z-0"
+            aria-hidden
           />
-        </motion.div>
-      </div>
-    </div>
+
+          <ParticlesContainer />
+
+          <motion.div
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="hidden xl:flex w-full h-full max-w-[550px] max-h-[550px] 2xl:max-w-[650px] 2xl:max-h-[650px] absolute bottom-0 right-[4%] 2xl:right-[8%] items-end justify-center pointer-events-none z-10"
+          >
+            <Avatar
+              className="w-full h-full flex items-end justify-center mix-blend-multiply"
+              imageClassName="object-contain object-bottom"
+              priority
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      <section id="about" className="section-surface scroll-mt-6">
+        <About />
+      </section>
+      <section id="services" className="section-surface scroll-mt-6">
+        <Services />
+      </section>
+      <section id="work" className="section-surface scroll-mt-6">
+        <Work />
+      </section>
+      <section id="experience" className="section-surface scroll-mt-6">
+        <ExperiencePage />
+      </section>
+      <section id="sertifikat" className="section-surface scroll-mt-6">
+        <SertifikatPage />
+      </section>
+      <section id="contact" className="section-surface scroll-mt-6">
+        <Contact />
+      </section>
+    </main>
   );
 };
 

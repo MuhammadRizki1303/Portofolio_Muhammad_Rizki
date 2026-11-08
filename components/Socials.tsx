@@ -1,12 +1,7 @@
 import Link from "next/link";
 import type { IconType } from "react-icons";
 import {
-  RiYoutubeLine,
-  RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
   RiGithubLine,
-  RiPinterestLine,
   RiLinkedinLine,
   RiMailLine
 } from "react-icons/ri";

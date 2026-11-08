@@ -16,11 +16,11 @@ import {
 
 export const navData: { name: string; path: string; Icon: IconType }[] = [
   { name: "home", path: "/", Icon: HiHome },
-  { name: "about", path: "/about", Icon: HiUser },
-  { name: "services", path: "/services", Icon: HiRectangleGroup },
-  { name: "work", path: "/work", Icon: HiViewColumns },
-  { name: "experience", path: "/experience", Icon: HiBriefcase },
-  { name: "sertifikat", path: "/sertifikat", Icon: HiDocumentCheck },
+  { name: "about", path: "/#about", Icon: HiUser },
+  { name: "services", path: "/#services", Icon: HiRectangleGroup },
+  { name: "work", path: "/#work", Icon: HiViewColumns },
+  { name: "experience", path: "/#experience", Icon: HiBriefcase },
+  { name: "sertifikat", path: "/#sertifikat", Icon: HiDocumentCheck },
   {
     name: "export & cv",
     path: "/export",
@@ -28,7 +28,7 @@ export const navData: { name: string; path: string; Icon: IconType }[] = [
   },
   {
     name: "contact",
-    path: "/contact",
+    path: "/#contact",
     Icon: HiEnvelope,
   },
 ];
@@ -39,24 +39,31 @@ const Nav = () => {
   return (
     <nav
       aria-label="Navigasi utama"
-      className="fixed inset-x-0 bottom-0 z-50 xl:inset-y-0 xl:left-auto xl:right-[2%] xl:flex xl:h-screen xl:w-20 xl:translate-y-12 xl:flex-col xl:items-center xl:justify-center"
+      className="fixed inset-x-3 bottom-3 z-50 xl:inset-y-0 xl:left-auto xl:right-[2%] xl:flex xl:h-screen xl:w-20 xl:translate-y-12 xl:flex-col xl:items-center xl:justify-center"
     >
-      <div className="flex min-h-16 w-full items-center justify-between gap-0 border-t border-white/10 bg-primary/95 px-1.5 pt-1.5 pb-[env(safe-area-inset-bottom)] text-xl backdrop-blur-lg sm:px-3 xl:h-max xl:w-16 xl:flex-col xl:justify-center xl:gap-y-10 xl:overflow-visible xl:rounded-full xl:border-0 xl:bg-white/10 xl:px-0 xl:py-8 xl:text-2xl">
+      <div className="glass-panel flex min-h-16 w-full items-center justify-between gap-0 rounded-2xl px-1.5 pt-1.5 pb-[env(safe-area-inset-bottom)] text-xl sm:px-3 xl:h-max xl:w-16 xl:flex-col xl:justify-center xl:gap-y-10 xl:overflow-visible xl:rounded-2xl xl:px-0 xl:py-8 xl:text-2xl">
         {navData.map((link) => (
           <Link
             prefetch
             className={`${
-              link.path === pathname && "text-accent"
+              ((link.path === "/" && pathname === "/") ||
+                link.path === pathname) &&
+              "text-accent"
             } group relative flex min-h-11 min-w-0 flex-1 flex-col items-center justify-center gap-y-0.5 px-0.5 transition-all duration-300 hover:text-accent xl:min-h-0 xl:flex-none xl:px-0`}
             href={link.path}
             key={link.path}
-            aria-current={link.path === pathname ? "page" : undefined}
+            aria-current={
+              (link.path === "/" && pathname === "/") ||
+              link.path === pathname
+                ? "page"
+                : undefined
+            }
           >
             <div
               role="tooltip"
               className="absolute pr-14 right-0 hidden xl:group-hover:flex"
             >
-              <div className="bg-white relative flex text-primary items-center p-1.5 rounded-[3px]">
+              <div className="relative flex items-center rounded-lg border border-white/10 bg-slate-100 p-1.5 text-primary shadow-xl">
                 <div className="text-[12px] leading-none font-semibold capitalize">
                   {link.name}
                 </div>

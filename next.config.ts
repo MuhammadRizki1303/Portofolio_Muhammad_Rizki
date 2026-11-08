@@ -5,14 +5,6 @@ const nextConfig: NextConfig = {
   compress: true,
   devIndicators: false,
   agentRules: false,
-  experimental: {
-    optimizePackageImports: [
-      "react-icons",
-      "framer-motion",
-      "@tsparticles/react",
-      "@tsparticles/engine",
-    ],
-  },
   images: {
     qualities: [75, 95],
   },

@@ -4,22 +4,29 @@ import Socials from "@/components/Socials";
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full items-center px-4 sm:px-8 xl:px-0 xl:h-22.5">
+    <header className="fixed inset-x-0 top-0 z-40 px-4 sm:px-8 xl:px-0">
       <div className="container mx-auto px-0">
-        <div className="flex flex-row justify-between items-center py-4 sm:py-6 xl:py-8">
-          <Link prefetch href="/">
-            <h1 className="text-lg sm:text-2xl xl:text-3xl font-bold">
-              muhammad<span className="text-accent font-light">rizki.</span>
-            </h1>
+        <div className="mt-3 flex flex-row items-center justify-between rounded-2xl border border-white/15 bg-primary/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-xl sm:mt-4 sm:px-5">
+          <Link prefetch href="/" className="group flex items-center gap-3">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-accent/30 bg-accent/10 text-xs font-bold text-accent transition-colors group-hover:bg-accent group-hover:text-primary">
+              MR
+            </span>
+            <span className="text-sm font-semibold tracking-tight sm:text-base">
+              Muhammad <span className="text-accent">Rizki</span>
+            </span>
           </Link>
 
-          <div className="flex items-center gap-x-1 sm:gap-x-4">
+          <div className="flex items-center gap-x-3 sm:gap-x-5">
+            <span className="hidden items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-white/50 sm:flex">
+            <span className="h-1.5 w-1.5 rounded-full bg-warm shadow-[0_0_10px_#FFD447]" />
+              Available for work
+            </span>
             <Link
               href="/export"
-              className="inline-flex items-center gap-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-full border border-accent/40 bg-accent/10 hover:bg-accent text-accent hover:text-white text-xs font-semibold tracking-wide transition-all duration-300 shadow-sm whitespace-nowrap"
+              className="inline-flex items-center gap-x-1.5 rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-accent transition-all duration-300 hover:bg-accent hover:text-primary sm:px-4"
               title="Unduh CV ATS & Export Portofolio PDF"
             >
-              <span className="hidden sm:inline">Unduh CV &amp; PDF</span>
+              <span className="hidden sm:inline">CV &amp; Portfolio</span>
               <span className="sm:hidden">CV</span>
             </Link>
             <Socials />

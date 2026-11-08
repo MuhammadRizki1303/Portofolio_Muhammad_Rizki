@@ -78,7 +78,7 @@ const ParticlesContainer = () => {
 
           if (dist < 140) {
             const opacity = (1 - dist / 140) * 0.4;
-            ctx.strokeStyle = `rgba(245, 211, 147, ${opacity})`;
+            ctx.strokeStyle = `rgba(34, 211, 238, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
@@ -113,7 +113,7 @@ const ParticlesContainer = () => {
         }
 
         // Draw particle
-        ctx.fillStyle = "#e68e2e";
+        ctx.fillStyle = "#FFD447";
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fill();
