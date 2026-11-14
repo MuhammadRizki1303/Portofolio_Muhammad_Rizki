@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
-import { FaPython, FaGithub, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTensorflow, SiKeras, SiJupyter } from "react-icons/si";
+import { FaPython, FaGithub, FaReact } from "react-icons/fa";
+import { SiTensorflow, SiKeras, SiJupyter, SiScikitlearn } from "react-icons/si";
 
 import Circles from "@/components/Circles";
 import { fadeIn } from "@/variants";
@@ -51,25 +51,25 @@ const KlasifikasiJamurPage = () => {
             className="flex flex-col justify-center"
           >
             <h1 className="text-[28px] md:text-[36px] font-semibold leading-tight mb-4">
-              Klasifikasi Jamur <span className="text-accent">CNN</span>
+              <span className="text-accent">MushroomAI</span>
             </h1>
             <p className="text-white/70 leading-relaxed text-sm mb-6">
-              Sistem visi komputer berbasis Convolutional Neural Network (CNN)
-              untuk klasifikasi citra spesies jamur secara otomatis.
-              Dikembangkan dalam program DBS Foundation Coding Camp, sistem ini
-              mampu mengidentifikasi spesies jamur yang aman dikonsumsi maupun
-              beracun dengan tingkat akurasi tinggi.
+              Proyek skripsi untuk klasifikasi citra jamur menggunakan
+              Convolutional Neural Network (CNN). Mencakup pipeline data,
+              pelatihan model, evaluasi dengan precision, recall, dan F1-score,
+              serta integrasi ke demo web interaktif.
             </p>
 
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-6">
               {[
                 { Icon: FaReact, label: "React" },
-                { Icon: FaNodeJs, label: "Node.js" },
                 { Icon: FaPython, label: "Python" },
                 { Icon: SiTensorflow, label: "TensorFlow" },
                 { Icon: SiKeras, label: "Keras" },
+                { Icon: SiScikitlearn, label: "scikit-learn" },
                 { Icon: SiJupyter, label: "Jupyter" },
+                { Icon: FaReact, label: "Demo Web" },
                 { Icon: FaGithub, label: "GitHub" },
               ].map(({ Icon, label }, i) => (
                 <div
@@ -87,7 +87,7 @@ const KlasifikasiJamurPage = () => {
               {[
                 { label: "Kategori", value: "Machine Learning" },
                 { label: "Tahun", value: "2025" },
-                { label: "Tim", value: "5 Orang" },
+                { label: "Konteks", value: "Proyek skripsi" },
                 { label: "Status", value: "Selesai" },
               ].map(({ label, value }, i) => (
                 <div

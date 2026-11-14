@@ -113,13 +113,13 @@ export default function ExportPage() {
             <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 pb-6 border-b border-white/10 print:border-gray-200">
               <div className="text-center md:text-left flex-1">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-accent/20 print:bg-red-50 text-accent font-semibold text-xs tracking-wider uppercase mb-3 border border-accent/30 print:border-red-200">
-                  <HiCheckBadge className="text-base" /> Sarjana Terapan Komputer • Cum Laude (IPK 3.87)
+                    <HiCheckBadge className="text-base" /> Sarjana Terapan Komputer • IPK 3,87 / 4,00
                 </div>
                 <h1 className="text-3xl md:text-4xl print:text-3xl font-extrabold tracking-tight text-white print:text-gray-900 mb-2">
                   Muhammad Rizki
                 </h1>
                 <p className="text-base print:text-sm text-accent font-medium mb-4">
-                  Full-Stack Web Developer • Machine Learning Engineer • IT Infrastructure Specialist
+                  Full-Stack Web Developer • IT Support Specialist
                 </p>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs md:text-sm print:text-xs text-white/70 print:text-gray-600">
                   <span className="flex items-center gap-1.5">
@@ -157,7 +157,7 @@ export default function ExportPage() {
                 Ringkasan Profil Profesional
               </h2>
               <p className="text-sm print:text-xs leading-relaxed text-white/80 print:text-gray-700 text-justify">
-                Lulusan <strong>Sarjana Terapan Komputer (D4 Teknik Informatika)</strong> dari Politeknik Negeri Lhokseumawe dengan predikat kehormatan <strong>Cum Laude (IPK 3.87 / 4.00)</strong>. Memiliki kapabilitas rekayasa perangkat lunak modern tingkat lanjut, mencakup ekosistem full-stack web berbasis Next.js, React, TypeScript, dan PHP OOP, pengembangan model Machine Learning (Deep Learning CNN) dengan Python & TensorFlow, serta pengalaman riil mengelola infrastruktur jaringan dan sistem IT skala industri di PT. Yageo TMSS Indonesia. Berkomitmen menghadirkan solusi komputasi yang scalable, teruji, dan berdampak langsung pada akselerasi proses bisnis.
+                Lulusan <strong>Sarjana Terapan (D4) Teknik Informatika</strong> dari Politeknik Negeri Lhokseumawe dengan <strong>IPK 3,87 / 4,00</strong>. Siap berkontribusi sebagai Full-Stack Developer maupun IT Support. Menguasai pengembangan aplikasi web end-to-end dengan Python, Java, PHP, Go, dan JavaScript, serta basis data, algoritma, OOP, design patterns, Git, GitHub, dan Docker. Berpengalaman membangun model klasifikasi CNN, Multi-Label Decision Tree, dan Gradient Boosting dengan akurasi di atas 85% pada dataset 3.000-4.000 sampel melalui Coding Camp by DBS Foundation. Mengembangkan lima proyek web dan IoT, dua di antaranya sebagai ketua tim.
               </p>
             </div>
 
@@ -173,14 +173,14 @@ export default function ExportPage() {
                     <div className="font-semibold text-white print:text-gray-800">D4 Teknik Informatika</div>
                     <div className="text-accent font-medium">Politeknik Negeri Lhokseumawe (2022 - 2026)</div>
                     <div className="text-white/60 print:text-gray-500 text-xs">
-                      Predikat Cum Laude • IPK 3.87 / 4.00 (Lulusan Terbaik)
+                      IPK 3,87 / 4,00
                     </div>
                   </div>
                   <div>
                     <div className="font-semibold text-white print:text-gray-800">Teknik Komputer & Jaringan (TKJ)</div>
                     <div className="text-accent font-medium">SMK Negeri 1 Bireuen (2019 - 2022)</div>
                     <div className="text-white/60 print:text-gray-500 text-xs">
-                      Kompetensi: Jaringan Komputer, Hardware & Troubleshooting
+                      Nilai akhir: 87
                     </div>
                   </div>
                 </div>
@@ -193,17 +193,17 @@ export default function ExportPage() {
                 </h3>
                 <div className="space-y-3 text-xs md:text-sm print:text-xs">
                   <div>
-                    <div className="font-semibold text-white print:text-gray-800">IT Support Specialist (Intern)</div>
-                    <div className="text-accent font-medium">PT. Yageo TMSS Indonesia (Jul 2025 - Apr 2026)</div>
+                    <div className="font-semibold text-white print:text-gray-800">IT Support</div>
+                    <div className="text-accent font-medium">PT. Yageo TMSS Indonesia (Juli 2025 - Januari 2026)</div>
                     <div className="text-white/60 print:text-gray-500 text-xs">
-                      Maintenance infrastruktur jaringan pabrik, server & workstation industri.
+                      Dukungan teknis harian untuk 10-15 staf lintas tiga lantai gedung.
                     </div>
                   </div>
                   <div>
-                    <div className="font-semibold text-white print:text-gray-800">Machine Learning Cohort</div>
-                    <div className="text-accent font-medium">DBS Foundation Coding Camp (Jan 2025 - Jun 2025)</div>
+                    <div className="font-semibold text-white print:text-gray-800">Asisten Teknisi</div>
+                    <div className="text-accent font-medium">SIMBADDA Technology (Januari - Juni 2020)</div>
                     <div className="text-white/60 print:text-gray-500 text-xs">
-                      Perancangan arsitektur CNN, inferensi citra jamur, dan pipeline data.
+                      Pemeliharaan, troubleshooting, instalasi ulang OS, dan konsultasi teknis.
                     </div>
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export default function ExportPage() {
                     <FaCode className="text-accent" /> Web Development
                   </div>
                   <p className="text-[11px] print:text-[10px] text-white/70 print:text-gray-600 leading-snug">
-                    Next.js 15+, React, TypeScript, PHP OOP, Tailwind CSS, REST API
+                    Python, Java, PHP, Go, JavaScript, OOP, Design Patterns, REST API
                   </p>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 print:bg-gray-50 border border-white/5 print:border-gray-200">
@@ -230,7 +230,7 @@ export default function ExportPage() {
                     <HiSparkles className="text-accent" /> AI & Machine Learning
                   </div>
                   <p className="text-[11px] print:text-[10px] text-white/70 print:text-gray-600 leading-snug">
-                    Python, TensorFlow, Keras, CNN Vision, Preprocessing, Scikit-Learn
+                    Python, scikit-learn, TensorFlow, CNN, Multi-Label Decision Tree, Gradient Boosting
                   </p>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 print:bg-gray-50 border border-white/5 print:border-gray-200">
@@ -238,7 +238,7 @@ export default function ExportPage() {
                     <FaDatabase className="text-accent" /> Database & Storage
                   </div>
                   <p className="text-[11px] print:text-[10px] text-white/70 print:text-gray-600 leading-snug">
-                    MySQL, MariaDB, SQL Query Optimization, Relational Schema, Firebase
+                    MySQL, PostgreSQL, Supabase
                   </p>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 print:bg-gray-50 border border-white/5 print:border-gray-200">
@@ -246,7 +246,7 @@ export default function ExportPage() {
                     <FaServer className="text-accent" /> Sistem & Hardware
                   </div>
                   <p className="text-[11px] print:text-[10px] text-white/70 print:text-gray-600 leading-snug">
-                    Git/GitHub, Docker, Network Routing, Troubleshooting, IoT ESP32
+                    Git, GitHub, Docker, PAN/LAN/MAN/WAN, VLAN/WLAN, Administrasi Server, Troubleshooting
                   </p>
                 </div>
               </div>
@@ -273,15 +273,15 @@ export default function ExportPage() {
                   Showcase Proyek Rekayasa 01 • Machine Learning & Computer Vision
                 </span>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-white print:text-gray-900 mt-1">
-                  Klasifikasi Jamur Berbasis CNN
+                  MushroomAI • Klasifikasi Jamur Berbasis CNN
                 </h2>
               </div>
               <div className="flex items-center gap-2 text-xs">
                 <span className="px-3 py-1 rounded-full bg-white/10 print:bg-gray-100 text-white/80 print:text-gray-700 font-medium">
-                  Tahun: 2025
+                  Proyek Skripsi
                 </span>
                 <span className="px-3 py-1 rounded-full bg-accent/20 print:bg-red-50 text-accent font-semibold">
-                  Status: Selesai & Teruji
+                  CNN & Web Demo
                 </span>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function ExportPage() {
                 Gambaran Sistem & Arsitektur
               </h3>
               <p className="text-xs md:text-sm print:text-xs leading-relaxed text-white/80 print:text-gray-700 text-justify">
-                Aplikasi cerdas berbasis visi komputer yang memanfaatkan arsitektur Convolutional Neural Network (CNN) untuk mengidentifikasi spesies jamur liar secara otomatis dari foto kamera. Mengatasi masalah risiko keracunan jamur fatal melalui deteksi akurat antara jamur beracun vs aman konsumsi dengan menghitung confidence score matematis dan visualisasi probabilitas kelas.
+                MushroomAI adalah proyek skripsi untuk klasifikasi citra jamur menggunakan Convolutional Neural Network (CNN). Model dilatih melalui pipeline pengumpulan, pembersihan, dan augmentasi data, lalu diintegrasikan ke antarmuka web demo.
               </p>
             </div>
 
@@ -329,11 +329,10 @@ export default function ExportPage() {
                   <HiCommandLine className="text-accent" /> Fitur Utama Aplikasi
                 </h4>
                 <ul className="text-xs print:text-[11px] text-white/70 print:text-gray-600 space-y-1.5 list-disc list-inside">
-                  <li>Klasifikasi real-time citra spesies jamur menggunakan model CNN</li>
-                  <li>Pipeline otomatisasi (resize, normalisasi piksel, augmentasi citra)</li>
-                  <li>Visualisasi hasil prediksi lengkap dengan skor persentase keyakinan</li>
-                  <li>Antarmuka web interaktif yang intuitif untuk upload dan pengujian seketika</li>
-                  <li>Penyimpanan histori pengujian untuk verifikasi dan audit identifikasi</li>
+                  <li>Klasifikasi citra jamur menggunakan model CNN</li>
+                  <li>Pipeline pengumpulan, pembersihan, dan augmentasi data</li>
+                  <li>Evaluasi menggunakan precision, recall, dan F1-score</li>
+                  <li>Antarmuka web demo untuk mencoba model klasifikasi</li>
                 </ul>
               </div>
 
@@ -342,11 +341,11 @@ export default function ExportPage() {
                   <HiWrenchScrewdriver className="text-accent" /> Kontribusi & Implementasi Teknis
                 </h4>
                 <ul className="text-xs print:text-[11px] text-white/70 print:text-gray-600 space-y-1.5 list-disc list-inside">
-                  <li>Merancang dataset pipeline: scraping, pembersihan, dan augmentasi data</li>
-                  <li>Melatih model CNN dengan framework TensorFlow & Keras</li>
-                  <li>Tuning hyperparameter (learning rate, adam optimizer, dropout regularization)</li>
-                  <li>Evaluasi model dengan confusion matrix, precision, recall, dan F1-score</li>
-                  <li>Membangun integrasi backend API inferensi ke frontend antarmuka demo</li>
+                  <li>Merancang pipeline pengumpulan, pembersihan, dan augmentasi citra</li>
+                  <li>Membangun dan melatih arsitektur CNN menggunakan TensorFlow & Keras</li>
+                  <li>Melakukan tuning hyperparameter untuk membantu mencegah overfitting</li>
+                  <li>Mengevaluasi model dengan precision, recall, dan F1-score</li>
+                  <li>Mengintegrasikan model ke antarmuka web demo</li>
                 </ul>
               </div>
             </div>
@@ -354,7 +353,7 @@ export default function ExportPage() {
             {/* Tech Stack Badges */}
             <div className="mt-5 pt-3 border-t border-white/10 print:border-gray-200 flex flex-wrap items-center gap-2">
               <span className="text-xs font-semibold text-white/60 print:text-gray-500 mr-2">Teknologi:</span>
-              {["Python", "TensorFlow", "Keras", "Convolutional Neural Network", "React", "Node.js", "Jupyter", "GitHub"].map((t, idx) => (
+              {["Python", "TensorFlow", "Keras", "CNN", "scikit-learn", "Web Demo"].map((t, idx) => (
                 <span
                   key={idx}
                   className="px-2.5 py-1 rounded-md text-xs print:text-[10px] font-medium bg-white/10 print:bg-gray-200 text-white/90 print:text-gray-800"
@@ -367,7 +366,7 @@ export default function ExportPage() {
 
           {/* Footer Halaman 2 */}
           <div className="mt-8 pt-4 border-t border-white/10 print:border-gray-200 flex items-center justify-between text-xs print:text-[10px] text-white/50 print:text-gray-500">
-            <span>Showcase Proyek: Klasifikasi Jamur CNN</span>
+            <span>Showcase Proyek: MushroomAI</span>
             <span>Halaman 2 dari 6</span>
           </div>
         </section>
@@ -430,7 +429,7 @@ export default function ExportPage() {
                 Gambaran Sistem & Urgensi Bisnis
               </h3>
               <p className="text-xs md:text-sm print:text-xs leading-relaxed text-white/80 print:text-gray-700 text-justify">
-                Sistem informasi tata kelola aset teknologi informasi berbasis web untuk korporasi dan institusi. Memfasilitasi pendataan perangkat keras (PC, server, printer, perangkat jaringan) dan lisensi perangkat lunak. Mencegah risiko kehilangan aset melalui sistem alur sirkulasi peminjaman, pelacakan histori pemeliharaan, serta pembuatan laporan audit otomatis.
+                Sistem manajemen aset IT yang dikembangkan selama magang di PT. Yageo TMSS Indonesia untuk melacak kondisi, lokasi, dan riwayat pemeliharaan aset.
               </p>
             </div>
 
@@ -442,10 +441,9 @@ export default function ExportPage() {
                 </h4>
                 <ul className="text-xs print:text-[11px] text-white/70 print:text-gray-600 space-y-1.5 list-disc list-inside">
                   <li>Manajemen CRUD komprehensif seluruh inventaris perangkat IT</li>
-                  <li>Kategorisasi multi-tier berdasarkan spesifikasi, kondisi, dan lokasi unit</li>
-                  <li>Modul peminjaman, persetujuan atasan, dan pengembalian unit otomatis</li>
-                  <li>Pelacakan histori reparasi perangkat dan jadwal maintenance preventif</li>
-                  <li>Ekspor laporan audit aset lengkap ke format file PDF dan Microsoft Excel</li>
+                  <li>Pencatatan dan pelacakan kondisi serta lokasi aset IT</li>
+                  <li>Riwayat pemeliharaan perangkat</li>
+                  <li>Ekspor laporan otomatis ke format PDF dan Excel</li>
                 </ul>
               </div>
 
@@ -454,11 +452,10 @@ export default function ExportPage() {
                   <HiWrenchScrewdriver className="text-accent" /> Kontribusi & Arsitektur Kode
                 </h4>
                 <ul className="text-xs print:text-[11px] text-white/70 print:text-gray-600 space-y-1.5 list-disc list-inside">
-                  <li>Merancang skema normalisasi database relasional MySQL yang solid</li>
+                  <li>Merancang skema database relasional MySQL untuk pelacakan aset</li>
                   <li>Membangun backend PHP berorientasi Object-Oriented Programming (OOP)</li>
-                  <li>Implementasi validasi data ketat di sisi server untuk integritas sistem</li>
-                  <li>Merancang UI dashboard interaktif dengan Bootstrap dan kustom CSS modern</li>
-                  <li>Mengintegrasikan library otomasi dokumen pelaporan aset</li>
+                  <li>Membangun logika CRUD untuk pengelolaan aset</li>
+                  <li>Mengembangkan modul ekspor laporan PDF dan Excel</li>
                 </ul>
               </div>
             </div>
@@ -466,7 +463,7 @@ export default function ExportPage() {
             {/* Tech Stack Badges */}
             <div className="mt-5 pt-3 border-t border-white/10 print:border-gray-200 flex flex-wrap items-center gap-2">
               <span className="text-xs font-semibold text-white/60 print:text-gray-500 mr-2">Teknologi:</span>
-              {["PHP (OOP)", "MySQL / MariaDB", "Bootstrap", "JavaScript", "HTML5 & CSS3", "REST Architecture", "DOMPDF", "Git"].map((t, idx) => (
+              {["PHP (OOP)", "MySQL", "CRUD", "Laporan PDF & Excel"].map((t, idx) => (
                 <span
                   key={idx}
                   className="px-2.5 py-1 rounded-md text-xs print:text-[10px] font-medium bg-white/10 print:bg-gray-200 text-white/90 print:text-gray-800"
@@ -497,15 +494,15 @@ export default function ExportPage() {
                   Showcase Proyek Rekayasa 03 • Internet of Things (IoT) & Embedded
                 </span>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-white print:text-gray-900 mt-1">
-                  Smart Locker Berbasis RFID & Web
+                  Smart Locker • Proyek Computer Vision & IoT
                 </h2>
               </div>
               <div className="flex items-center gap-2 text-xs">
                 <span className="px-3 py-1 rounded-full bg-white/10 print:bg-gray-100 text-white/80 print:text-gray-700 font-medium">
-                  Hardware & Web Sync
+                  Ketua Tim
                 </span>
                 <span className="px-3 py-1 rounded-full bg-accent/20 print:bg-red-50 text-accent font-semibold">
-                  Status: Terintegrasi Penuh
+                  Web • ESP32
                 </span>
               </div>
             </div>
@@ -513,10 +510,10 @@ export default function ExportPage() {
             {/* Gallery Gambar 2x2 */}
             <div className="grid grid-cols-2 gap-3 mb-6">
               {[
-                { src: "/projects/Smart Locker/Dashboard RFID.png", label: "Dashboard Kontrol Web" },
-                { src: "/projects/Smart Locker/Implementasi RFID.png", label: "Integrasi Hardware & Sensor" },
-                { src: "/projects/Smart Locker/Design RFID.png", label: "Skema Desain Rangkaian" },
-                { src: "/projects/Smart Locker/web RFID.png", label: "Antarmuka Akses Pengguna" },
+                { src: "/projects/Smart Locker/Dashboard RFID.png", label: "Dashboard Pemantauan Loker" },
+                { src: "/projects/Smart Locker/Implementasi RFID.png", label: "Implementasi Hardware" },
+                { src: "/projects/Smart Locker/Design RFID.png", label: "Desain Sistem" },
+                { src: "/projects/Smart Locker/web RFID.png", label: "Antarmuka Web" },
               ].map((img, idx) => (
                 <div
                   key={idx}
@@ -542,7 +539,7 @@ export default function ExportPage() {
                 Konsep & Inovasi Teknologi
               </h3>
               <p className="text-xs md:text-sm print:text-xs leading-relaxed text-white/80 print:text-gray-700 text-justify">
-                Sistem loker penyimpanan cerdas yang mengintegrasikan mikrokontroler hardware dengan antarmuka portal web modern. Menggantikan mekanisme kunci konvensional dengan autentikasi nirkontak digital (RFID / QR code), dilengkapi pemantauan ketersediaan loker secara real-time, penguncian solenoid otomatis, dan pencatatan audit log transaksi keamanan terpusat.
+                Sistem loker digital dengan antarmuka web manajemen, autentikasi QR Code, dan dashboard untuk memantau status loker secara real-time. Web server berkomunikasi dengan mikrokontroler ESP32 melalui HTTP/MQTT.
               </p>
             </div>
 
@@ -553,11 +550,9 @@ export default function ExportPage() {
                   <HiCommandLine className="text-accent" /> Fitur Unggulan Sistem
                 </h4>
                 <ul className="text-xs print:text-[11px] text-white/70 print:text-gray-600 space-y-1.5 list-disc list-inside">
-                  <li>Kontrol buka/tutup loker nirsentuh via kartu RFID dan dashboard web</li>
-                  <li>Sinkronisasi status sensor dan solenoid lock secara instan ke server</li>
-                  <li>Dashboard monitoring visual status ketersediaan loker secara real-time</li>
-                  <li>Audit trail pencatatan log waktu buka, identitas pengguna, dan durasi sewa</li>
-                  <li>Protokol keamanan fail-safe saat terjadi gangguan konektivitas jaringan</li>
+                  <li>Antarmuka web responsif untuk manajemen loker</li>
+                  <li>Autentikasi QR Code dan dashboard pemantauan status real-time</li>
+                  <li>Komunikasi data antara web server dan ESP32 melalui HTTP/MQTT</li>
                 </ul>
               </div>
 
@@ -566,11 +561,10 @@ export default function ExportPage() {
                   <HiWrenchScrewdriver className="text-accent" /> Kontribusi Rekayasa Hardware & Web
                 </h4>
                 <ul className="text-xs print:text-[11px] text-white/70 print:text-gray-600 space-y-1.5 list-disc list-inside">
-                  <li>Memprogram mikrokontroler ESP32/Arduino dengan logika C++ dan komunikasi WiFi</li>
-                  <li>Merancang rangkaian relay controller untuk menggerakkan solenoid lock</li>
-                  <li>Membangun REST API dan WebSocket handler untuk pertukaran data hardware-web</li>
-                  <li>Membuat antarmuka web interaktif yang intuitif dan mudah dioperasikan</li>
-                  <li>Uji coba ketahanan hardware dan penanganan latency sinyal komunikasi</li>
+                  <li>Memimpin tim dengan pembagian tugas sesuai keahlian anggota</li>
+                  <li>Menyusun timeline agar pengerjaan proyek terstruktur dan tepat waktu</li>
+                  <li>Membangun antarmuka web manajemen loker yang responsif</li>
+                  <li>Mengembangkan komunikasi data web server dan ESP32 menggunakan HTTP/MQTT</li>
                 </ul>
               </div>
             </div>
@@ -578,7 +572,7 @@ export default function ExportPage() {
             {/* Tech Stack Badges */}
             <div className="mt-5 pt-3 border-t border-white/10 print:border-gray-200 flex flex-wrap items-center gap-2">
               <span className="text-xs font-semibold text-white/60 print:text-gray-500 mr-2">Teknologi:</span>
-              {["ESP32 / Arduino", "C++ Embedded", "RFID RC522", "Solenoid Lock", "Node.js / PHP", "MySQL", "WebSockets", "IoT Architecture"].map((t, idx) => (
+              {["React", "MySQL", "ESP32", "HTTP/MQTT"].map((t, idx) => (
                 <span
                   key={idx}
                   className="px-2.5 py-1 rounded-md text-xs print:text-[10px] font-medium bg-white/10 print:bg-gray-200 text-white/90 print:text-gray-800"
@@ -625,21 +619,21 @@ export default function ExportPage() {
                 </div>
                 <div className="md:col-span-7">
                   <span className="text-[10px] font-semibold uppercase text-accent tracking-wider">
-                    Academic Community Portal
+                    Portal Informasi Akademik
                   </span>
                   <h3 className="text-lg font-bold text-white print:text-gray-900 mb-1.5">
-                    Web IT Class D Portal
+                    Portal Informasi Akademik
                   </h3>
                   <p className="text-xs print:text-[11px] text-white/75 print:text-gray-700 leading-relaxed mb-3">
-                    Portal terpadu untuk direktori profil mahasiswa, distribusi repositori materi perkuliahan, kalender jadwal dinamis, dan pengumuman broadcast yang responsif.
+                    Portal akademik dengan modul backend untuk manajemen direktori data, kalender akademik dinamis, dan publikasi konten.
                   </p>
                   <div className="text-[11px] print:text-[10px] text-white/60 print:text-gray-600 space-y-1 mb-3">
-                    <div>• Manajemen direktori mahasiswa terstruktur dengan integrasi database MySQL</div>
-                    <div>• Kalender kegiatan akademik dinamis dan modul broadcast pengumuman</div>
-                    <div>• Tata kelola layout adaptif untuk smartphone, tablet, dan desktop</div>
+                    <div>• Memimpin tim dan mengatur pembagian tugas serta alokasi waktu</div>
+                    <div>• Mengembangkan modul backend direktori, kalender, dan publikasi konten</div>
+                    <div>• Mengimplementasikan desain responsif dan melakukan pengujian cross-browser</div>
                   </div>
                   <div className="flex flex-wrap gap-1.5">
-                    {["Next.js", "React", "Tailwind CSS", "TypeScript", "MySQL", "PHP"].map((t, idx) => (
+                    {["PHP", "MySQL", "Responsive Web"].map((t, idx) => (
                       <span key={idx} className="px-2 py-0.5 rounded text-[10px] bg-white/10 print:bg-gray-200 text-white/90 print:text-gray-800 font-medium">
                         {t}
                       </span>
@@ -669,15 +663,15 @@ export default function ExportPage() {
                     TravelMate - Smart Trip Planner
                   </h3>
                   <p className="text-xs print:text-[11px] text-white/75 print:text-gray-700 leading-relaxed mb-3">
-                    Aplikasi perencanaan perjalanan komprehensif yang mempermudah wisatawan menyusun jadwal petualangan, menelusuri destinasi unggulan, dan mengestimasi rute perjalanan.
+                    Proyek final Coding Camp by DBS Foundation untuk mengeksplorasi destinasi, menyusun itinerary, menyimpan tempat favorit di Firebase, dan memperoleh rekomendasi wisata berbasis Machine Learning.
                   </p>
                   <div className="text-[11px] print:text-[10px] text-white/60 print:text-gray-600 space-y-1 mb-3">
-                    <div>• Katalog destinasi wisata terkurasi dengan filter kategori dan fasilitas</div>
-                    <div>• Modul penyusun jadwal itinerary fleksibel dengan estimasi waktu</div>
-                    <div>• Penyimpanan destinasi favorit pengguna berbasis cloud storage</div>
+                    <div>• Eksplorasi destinasi dan penyusunan itinerary</div>
+                    <div>• Penyimpanan destinasi favorit menggunakan Firebase</div>
+                    <div>• Rekomendasi wisata dari model Machine Learning</div>
                   </div>
                   <div className="flex flex-wrap gap-1.5">
-                    {["React", "Node.js", "Tailwind CSS", "Firebase", "Maps API", "Responsive UI"].map((t, idx) => (
+                    {["Firebase", "Machine Learning", "Responsive Web"].map((t, idx) => (
                       <span key={idx} className="px-2 py-0.5 rounded text-[10px] bg-white/10 print:bg-gray-200 text-white/90 print:text-gray-800 font-medium">
                         {t}
                       </span>
@@ -717,46 +711,46 @@ export default function ExportPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               {[
                 {
-                  badge: "Kehormatan Akademik Tertinggi",
-                  title: "Piagam Penghargaan Lulusan Terbaik (Cum Laude)",
-                  issuer: "Politeknik Negeri Lhokseumawe",
-                  year: "2026",
-                  desc: "Penghargaan resmi wisudawan terbaik program D4 Teknik Informatika dengan IPK 3.87.",
-                },
-                {
-                  badge: "Gelar Akademik Resmi",
-                  title: "Sarjana Terapan Komputer (S.Tr.Kom)",
-                  issuer: "Politeknik Negeri Lhokseumawe",
-                  year: "2022 - 2026",
-                  desc: "Ijazah dan transkrip kelulusan resmi sarjana terapan bidang rekayasa informatika.",
-                },
-                {
-                  badge: "Spesialisasi AI & Deep Learning",
-                  title: "Machine Learning Cohort Graduate",
-                  issuer: "DBS Foundation x Dicoding Coding Camp",
-                  year: "2025",
-                  desc: "Pendidikan intensif computer vision, data pipeline, dan model deployment.",
+                  badge: "Pelatihan Vokasi",
+                  title: "MTU Batch II • Teknologi Informasi",
+                  issuer: "Balai Pelatihan Vokasi dan Produktivitas",
+                  year: "",
+                  desc: "Pelatihan Mobile Training Unit bidang teknologi informasi.",
                 },
                 {
                   badge: "Sertifikasi Profesi Nasional",
-                  title: "Sertifikat Kompetensi Keahlian: Web Developer",
+                  title: "Web Developer",
                   issuer: "BNSP (Badan Nasional Sertifikasi Profesi)",
-                  year: "2024",
-                  desc: "Uji standar kompetensi kerja nasional Indonesia bidang pemrograman web modern.",
+                  year: "",
+                  desc: "Sertifikasi kompetensi profesi bidang pengembangan web.",
                 },
                 {
                   badge: "Kursus Profesional",
-                  title: "Belajar Dasar AI & Machine Learning Supervised/Unsupervised",
+                  title: "Pemrograman dengan Python",
                   issuer: "Dicoding Indonesia",
-                  year: "2025",
-                  desc: "Penguasaan algoritma klasifikasi, regresi, clustering, dan neural networks.",
+                  year: "",
+                  desc: "Kursus pemrograman Python.",
                 },
                 {
                   badge: "Kursus Profesional",
-                  title: "Analisis Data dengan Python & Visualisasi Data Terapan",
+                  title: "Belajar Git dan GitHub",
                   issuer: "Dicoding Indonesia",
-                  year: "2024",
-                  desc: "Eksplorasi data, pembersihan dataset, visualisasi matriks, dan analisis statistik.",
+                  year: "",
+                  desc: "Kursus version control menggunakan Git dan GitHub.",
+                },
+                {
+                  badge: "Kursus Profesional",
+                  title: "Visualisasi Data Basic & Basic SQL",
+                  issuer: "Dicoding Indonesia",
+                  year: "",
+                  desc: "Kursus visualisasi data dan dasar SQL.",
+                },
+                {
+                  badge: "Kursus Profesional",
+                  title: "Programming Logic 101 & Basic AI",
+                  issuer: "Dicoding Indonesia",
+                  year: "",
+                  desc: "Kursus logika pemrograman dan dasar kecerdasan artifisial.",
                 },
               ].map((cert, idx) => (
                 <div
@@ -768,9 +762,11 @@ export default function ExportPage() {
                       <span className="px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-accent/20 print:bg-red-50 text-accent border border-accent/20">
                         {cert.badge}
                       </span>
-                      <span className="text-xs text-white/50 print:text-gray-500 font-medium">
-                        {cert.year}
-                      </span>
+                      {cert.year && (
+                        <span className="text-xs text-white/50 print:text-gray-500 font-medium">
+                          {cert.year}
+                        </span>
+                      )}
                     </div>
                     <h3 className="text-sm font-bold text-white print:text-gray-900 mb-1 leading-snug">
                       {cert.title}
@@ -792,7 +788,7 @@ export default function ExportPage() {
                 <HiCheckCircle className="text-accent text-lg" /> Komitmen Profesional & Kesiapan Kerja
               </h3>
               <p className="text-xs md:text-sm print:text-xs leading-relaxed text-white/80 print:text-gray-700 text-justify">
-                Dengan kombinasi latar belakang akademis Cum Laude, pengalaman lapangan menangani perangkat dan jaringan industri di PT. Yageo TMSS Indonesia, serta keterampilan rekayasa Full-Stack Web dan Machine Learning modern, saya siap mendedikasikan dedikasi penuh untuk berkontribusi memecahkan tantangan teknologi tim Anda.
+                Dengan latar belakang D4 Teknik Informatika, pengalaman dukungan IT di lingkungan industri, serta keterampilan Full-Stack Web dan Machine Learning, saya siap berkontribusi dalam membangun solusi teknologi dan mendukung kebutuhan tim.
               </p>
             </div>
           </div>

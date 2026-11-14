@@ -29,7 +29,7 @@ const workSlides = {
           link: "/projects/smart-locker",
         },
         {
-          title: "Web IT Class D",
+          title: "Portal Informasi Akademik",
           path: "/projects/web class D/1_Home_web_D.png",
           link: "/projects/web-it-class-d",
         },
@@ -72,7 +72,7 @@ const WorkSlider = () => {
                 />
 
                 <div
-                  className="absolute inset-0 bg-linear-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-focus-visible:opacity-60"
+                  className="absolute inset-0 bg-accent/30 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-focus-visible:opacity-60"
                   aria-hidden
                 />
 

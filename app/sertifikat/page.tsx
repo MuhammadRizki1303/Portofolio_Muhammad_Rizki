@@ -649,7 +649,7 @@ const SertifikatPage = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="relative w-full max-w-4xl bg-site border border-white/20 rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh]"
+              className="relative w-full max-w-4xl bg-primary border border-white/20 rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh]"
             >
               {/* Modal Header */}
               <div className="flex items-center justify-between p-4 md:p-5 border-b border-white/10 bg-white/5">

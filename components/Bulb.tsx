@@ -1,15 +1,11 @@
-import Image from "next/image";
-
 const Bulb = () => {
   return (
-    <div className="absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge animate-pulse duration-75 z-10 w-50 xl:w-65 select-none pointer-events-none">
-      <Image
-        src="/bulb.png"
-        alt="bulb"
-        width={260}
-        height={200}
-        className="w-full h-full"
-      />
+    <div className="ambient-ornament ambient-ornament--prism" aria-hidden="true">
+      <div className="ambient-ornament__prism">
+        <span className="ambient-ornament__facet" />
+      </div>
+      <span className="ambient-ornament__orbit ambient-ornament__orbit--prism" />
+      <div className="ambient-ornament__glow" />
     </div>
   );
 };

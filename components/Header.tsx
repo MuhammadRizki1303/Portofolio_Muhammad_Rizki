@@ -18,7 +18,7 @@ const Header = () => {
 
           <div className="flex items-center gap-x-3 sm:gap-x-5">
             <span className="hidden items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-white/50 sm:flex">
-            <span className="h-1.5 w-1.5 rounded-full bg-warm shadow-[0_0_10px_#FFD447]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-warm shadow-[0_0_10px_#F0C58F]" />
               Available for work
             </span>
             <Link

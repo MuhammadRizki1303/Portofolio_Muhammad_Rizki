@@ -4,7 +4,6 @@ import { Toaster } from "react-hot-toast";
 
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
-import TopLeftImg from "@/components/TopLeftImg";
 
 import "./globals.css";
 
@@ -17,7 +16,7 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "Muhammad Rizki | Portofolio",
   description:
-    "Portofolio resmi Muhammad Rizki - Mahasiswa Teknik Informatika & Web Developer.",
+    "Portofolio resmi Muhammad Rizki - Lulusan D4 Teknik Informatika, Full-Stack Web Developer, dan IT Support.",
   keywords: [
     "react",
     "next",
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Muhammad Rizki" }],
   other: {
-    "theme-color": "#081827",
+    "theme-color": "#29444b",
   },
 };
 
@@ -54,9 +53,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-full xl:h-full">
       <body
-        className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-no-repeat relative`}
+        className={`${sora.variable} font-sora page bg-primary text-white relative`}
       >
-        <TopLeftImg />
         <Nav />
         <Header />
         {children}
@@ -65,9 +63,9 @@ export default function RootLayout({
             position="top-center"
             toastOptions={{
               style: {
-                background: "#393a47",
+                background: "#29444b",
                 color: "#fff",
-                border: "1px solid rgba(255, 255, 255, 0.2)",
+                border: "1px solid rgba(255, 255, 255, 0.16)",
               },
             }}
           />

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
-import { FaHtml5, FaCss3, FaJs, FaGithub, FaPhp } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 
 import Circles from "@/components/Circles";
@@ -51,33 +51,32 @@ const WebITClassDPage = () => {
             className="flex flex-col justify-center"
           >
             <h1 className="text-[28px] md:text-[36px] font-semibold leading-tight mb-4">
-              Web IT <span className="text-accent">Class D</span>
+              <span className="text-accent">Portal Informasi Akademik</span>
             </h1>
             <p className="text-white/70 leading-relaxed text-sm mb-6">
-              Platform web portal informasi akademik dan kolaborasi komunitas
-              terpusat. Dirancang dengan antarmuka modern dan responsif untuk
-              menyajikan direktori data, integrasi jadwal dinamis, serta pusat
-              pengumuman kegiatan secara efisien.
+              Portal informasi akademik responsif dengan direktori data,
+              kalender akademik dinamis, dan publikasi konten. Saya memimpin
+              proyek serta mengembangkan modul backend untuk pengelolaan data
+              dan konten.
             </p>
 
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-6">
               {[
-                { Icon: FaHtml5, label: "HTML5" },
-                { Icon: FaCss3, label: "CSS3" },
-                { Icon: FaJs, label: "JavaScript" },
                 { Icon: FaPhp, label: "PHP" },
                 { Icon: SiMysql, label: "MySQL" },
-                { Icon: FaGithub, label: "GitHub" },
-              ].map(({ Icon, label }, i) => (
+              ].map(({ Icon, label }) => (
                 <div
-                  key={i}
+                  key={label}
                   className="flex items-center gap-x-2 bg-white/5 border border-white/10 rounded-full px-3 py-1 text-xs text-white/70"
                 >
                   <Icon className="text-accent" />
                   <span>{label}</span>
                 </div>
               ))}
+              <span className="flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+                Responsive Web
+              </span>
             </div>
 
             {/* Info ringkas */}
@@ -85,7 +84,7 @@ const WebITClassDPage = () => {
               {[
                 { label: "Kategori", value: "Web Development" },
                 { label: "Tahun", value: "2023" },
-                { label: "Tim", value: "Kelas IT D" },
+                { label: "Peran", value: "Ketua Tim" },
                 { label: "Status", value: "Selesai" },
               ].map(({ label, value }, i) => (
                 <div
@@ -140,11 +139,9 @@ const WebITClassDPage = () => {
               Deskripsi Proyek
             </h3>
             <p className="text-white/70 text-sm leading-relaxed">
-              Portal informasi akademik berbasis web yang dibangun untuk
-              memfasilitasi komunikasi dan pertukaran materi secara terpusat.
-              Menyediakan direktori terstruktur, integrasi jadwal dinamis, serta
-              pengelolaan pengumuman dengan performa akses lintas perangkat yang
-              cepat dan andal.
+              Portal informasi akademik dengan direktori data, kalender
+              akademik dinamis, dan publikasi konten. Antarmukanya dirancang
+              responsif untuk berbagai perangkat.
             </p>
           </motion.div>
 
@@ -160,18 +157,11 @@ const WebITClassDPage = () => {
             </h3>
             <ul className="text-white/70 text-sm space-y-1.5 leading-relaxed list-disc list-inside">
               <li>
-                Portal beranda interaktif dengan pusat informasi dan pembaruan
-                terkini
-              </li>
-              <li>
-                Direktori profil terstruktur dengan integrasi database MySQL
+                Modul backend untuk manajemen direktori data
               </li>
               <li>Kalender akademik dan jadwal kegiatan dinamis</li>
-              <li>Manajemen publikasi materi dan pengumuman terpadu</li>
-              <li>
-                Optimasi tampilan responsif untuk smartphone, tablet, dan
-                desktop
-              </li>
+              <li>Publikasi konten dan pengumuman</li>
+              <li>Desain responsif multi-device dan pengujian cross-browser</li>
             </ul>
           </motion.div>
 
@@ -187,24 +177,15 @@ const WebITClassDPage = () => {
             </h3>
             <ul className="text-white/70 text-sm space-y-1.5 leading-relaxed list-disc list-inside">
               <li>
-                Merancang arsitektur tata letak antarmuka dan sistem navigasi
-                yang intuitif
+                Memimpin kelompok proyek serta mengatur pembagian tugas dan
+                alokasi waktu
               </li>
+              <li>Membangun backend untuk direktori data dan publikasi konten</li>
               <li>
-                Mengimplementasikan desain responsif multi-device dengan CSS
-                modern
+                Mengimplementasikan kalender akademik dinamis dan desain
+                responsif
               </li>
-              <li>
-                Membangun modul backend PHP & MySQL untuk manajemen direktori
-                data
-              </li>
-              <li>
-                Mengintegrasikan modul jadwal dinamis dan alur publikasi konten
-              </li>
-              <li>
-                Melakukan pengujian fungsionalitas lintas peramban
-                (cross-browser testing)
-              </li>
+              <li>Melakukan pengujian cross-browser</li>
             </ul>
           </motion.div>
         </div>

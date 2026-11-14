@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
-import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiFirebase, SiTailwindcss } from "react-icons/si";
-
 import Circles from "@/components/Circles";
 import { fadeIn } from "@/variants";
 const screenshots = [
@@ -51,27 +48,20 @@ const TravelmatePage = () => {
               Travel<span className="text-accent">Mate</span>
             </h1>
             <p className="text-white/70 leading-relaxed text-sm mb-6">
-              Aplikasi pendamping perjalanan yang membantu pengguna menemukan
-              inspirasi destinasi, menyusun rencana perjalanan, dan menyimpan
-              informasi tempat wisata dalam satu pengalaman digital yang
-              praktis.
+              Proyek final Coding Camp by DBS Foundation untuk membantu
+              pengguna mengeksplorasi destinasi dan menyusun itinerary.
+              Aplikasi menyimpan destinasi favorit melalui Firebase dan
+              mengintegrasikan model Machine Learning untuk rekomendasi wisata.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-6">
-              {[
-                { Icon: FaReact, label: "React" },
-                { Icon: FaNodeJs, label: "Node.js" },
-                { Icon: SiTailwindcss, label: "Tailwind CSS" },
-                { Icon: SiFirebase, label: "Firebase" },
-                { Icon: FaGithub, label: "GitHub" },
-              ].map(({ Icon, label }) => (
-                <div
+              {["Firebase", "Responsive Web", "Machine Learning"].map((label) => (
+                <span
                   key={label}
-                  className="flex items-center gap-x-2 bg-white/5 border border-white/10 rounded-full px-3 py-1 text-xs text-white/70"
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70"
                 >
-                  <Icon className="text-accent" />
-                  <span>{label}</span>
-                </div>
+                  {label}
+                </span>
               ))}
             </div>
 
@@ -79,7 +69,7 @@ const TravelmatePage = () => {
               {[
                 { label: "Kategori", value: "Travel & Web App" },
                 { label: "Tahun", value: "2025" },
-                { label: "Tim", value: "4 Orang" },
+                { label: "Konteks", value: "Proyek final DBS" },
                 { label: "Status", value: "Selesai" },
               ].map(({ label, value }) => (
                 <div
@@ -154,7 +144,8 @@ const TravelmatePage = () => {
               </li>
               <li>Detail tempat wisata dengan informasi yang terstruktur</li>
               <li>Penyusunan itinerary perjalanan yang mudah digunakan</li>
-              <li>Penyimpanan destinasi favorit secara personal</li>
+              <li>Penyimpanan destinasi favorit menggunakan Firebase</li>
+              <li>Rekomendasi wisata menggunakan model Machine Learning</li>
             </ul>
           </motion.div>
 
@@ -174,11 +165,9 @@ const TravelmatePage = () => {
               </li>
               <li>Merancang alur eksplorasi dan perencanaan perjalanan</li>
               <li>
-                Mengintegrasikan penyimpanan data pengguna dengan Firebase
+                Mengintegrasikan penyimpanan destinasi favorit dengan Firebase
               </li>
-              <li>
-                Menjaga pengalaman navigasi tetap sederhana dan informatif
-              </li>
+              <li>Mengintegrasikan model rekomendasi wisata berbasis Machine Learning</li>
             </ul>
           </motion.div>
         </div>

@@ -18,20 +18,20 @@ export const experiences: Experience[] = [
   {
     slug: "yageo-tmss-indonesia",
     company: "PT. Yageo TMSS Indonesia",
-    position: "IT Support Specialist (Intern)",
-    period: "Jul 2025 - Apr 2026",
+    position: "IT Support",
+    period: "Juli 2025 - Januari 2026",
     summary:
-      "Mendukung operasional infrastruktur IT di lingkungan industri melalui penanganan perangkat, jaringan, dan kebutuhan teknis pengguna.",
+      "Memberikan dukungan teknis tingkat pertama bagi 10-15 staf lintas tiga lantai gedung, sekaligus membantu menjaga kesiapan perangkat dan konektivitas operasional.",
     responsibilities: [
-      "Menangani troubleshooting perangkat keras, perangkat lunak, dan konektivitas jaringan.",
-      "Membantu instalasi, konfigurasi, serta pemeliharaan perangkat komputer dan perangkat jaringan.",
-      "Mendokumentasikan aset dan aktivitas dukungan IT agar proses tindak lanjut lebih terarah.",
-      "Berkoordinasi dengan pengguna dan tim terkait untuk menyelesaikan kendala operasional.",
+      "Menangani kendala laptop dan aplikasi sebagai dukungan teknis tingkat pertama untuk rata-rata 10-15 staf per hari.",
+      "Menginstal dan mengonfigurasi server, switch, hub, router, serta perangkat jaringan lainnya.",
+      "Memelihara perangkat keras divisi IT untuk menjaga ketersediaan dan kesiapan sistem.",
+      "Berkoordinasi lintas divisi untuk menyelesaikan rata-rata 2-3 permintaan teknis khusus per minggu.",
     ],
     results: [
-      "Kebutuhan dukungan teknis pengguna dapat ditangani dengan alur kerja yang lebih terstruktur.",
-      "Dokumentasi aset dan riwayat penanganan membantu tim IT memantau kondisi perangkat.",
-      "Mendapat pengalaman langsung mengelola infrastruktur IT pada skala industri.",
+      "Mendukung kelancaran operasional harian melalui penanganan kendala perangkat dan aplikasi secara efisien.",
+      "Menjaga konektivitas dan kesiapan infrastruktur IT melalui konfigurasi jaringan dan pemeliharaan perangkat.",
+      "Membangun pengalaman langsung dalam dukungan IT industri dan koordinasi lintas divisi.",
     ],
     gallery: [
       {
@@ -55,20 +55,20 @@ export const experiences: Experience[] = [
   {
     slug: "simbadda-technology",
     company: "SIMBADDA Technology",
-    position: "Hardware & IT Support (Intern)",
-    period: "Jan 2020 - Jun 2020",
+    position: "Asisten Teknisi",
+    period: "Januari 2020 - Juni 2020",
     summary:
-      "Mendapatkan pengalaman awal di bidang hardware dan dukungan teknis melalui praktik kerja industri.",
+      "Menangani pemeliharaan, troubleshooting, instalasi ulang sistem operasi, dan konsultasi teknis bagi pelanggan.",
     responsibilities: [
-      "Melakukan pemeriksaan dan perawatan dasar perangkat komputer.",
-      "Membantu instalasi sistem operasi, aplikasi, dan konfigurasi perangkat.",
-      "Menangani kebutuhan teknis sederhana serta mendampingi pengguna.",
-      "Mencatat proses pemeriksaan dan perbaikan perangkat.",
+      "Menangani pemeliharaan dan troubleshooting 5-6 unit laptop pelanggan per hari.",
+      "Menginstal ulang sistem operasi pada 5-6 unit laptop atau PC per hari sesuai spesifikasi dan kebutuhan pelanggan.",
+      "Memberikan konsultasi teknis dengan menerjemahkan istilah teknis menjadi solusi yang mudah dipahami.",
+      "Mengidentifikasi kebutuhan pelanggan dan memberikan solusi teknis yang tepat sasaran.",
     ],
     results: [
-      "Memperkuat fondasi troubleshooting hardware dan software secara langsung.",
-      "Terbiasa bekerja mengikuti prosedur layanan dan dokumentasi teknis.",
-      "Membangun pengalaman kerja profesional pertama di bidang IT support.",
+      "Membangun pengalaman praktis dalam perawatan, troubleshooting, dan instalasi sistem operasi.",
+      "Mengembangkan komunikasi layanan pelanggan serta kemampuan menjelaskan solusi teknis.",
+      "Menangani kebutuhan hardware dan software pelanggan dalam ritme kerja harian.",
     ],
     gallery: [
       {

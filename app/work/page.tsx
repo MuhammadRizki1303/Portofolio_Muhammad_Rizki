@@ -9,9 +9,9 @@ import { fadeIn } from "@/variants";
 
 const Work = () => {
   return (
-    <div className="min-h-screen overflow-y-auto bg-primary/30 py-24 xl:py-36 xl:flex xl:items-center pb-24 xl:pb-0">
+    <div className="relative isolate min-h-screen overflow-hidden bg-primary/30 py-24 xl:py-36 xl:flex xl:items-center pb-24 xl:pb-0">
       <Circles />
-      <div className="container mx-auto px-4">
+      <div className="container relative z-10 mx-auto px-4">
         <div className="flex flex-col xl:flex-row gap-x-8">
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2

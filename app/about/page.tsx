@@ -5,19 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 import CountUp from "react-countup";
 import { BsArrowRight } from "react-icons/bs";
-import {
-  FaCss3,
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaPython,
-  FaJava,
-  FaPhp,
-  FaGithub,
-  FaDocker,
-  FaDatabase,
-} from "react-icons/fa";
-import type { IconType } from "react-icons";
 
 import Avatar from "@/components/Avatar";
 import Circles from "@/components/Circles";
@@ -27,7 +14,7 @@ import { fadeIn } from "@/variants";
 type AboutInfoItem = {
   title: string;
   stage?: string;
-  icons?: IconType[];
+  details?: string[];
   href?: string;
 };
 
@@ -41,12 +28,29 @@ const aboutData: AboutDataItem[] = [
     title: "keahlian",
     info: [
       {
-        title: "Web Development",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, FaPhp],
+        title: "Full-Stack & Backend",
+        details: [
+          "Python",
+          "Java",
+          "PHP",
+          "Go",
+          "JavaScript",
+          "OOP",
+          "Design Patterns",
+          "REST API",
+        ],
       },
       {
-        title: "Programming & Tools",
-        icons: [FaPython, FaJava, FaDatabase, FaGithub, FaDocker],
+        title: "Machine Learning & Infrastruktur IT",
+        details: [
+          "scikit-learn",
+          "TensorFlow",
+          "Git & GitHub",
+          "Docker",
+          "Administrasi server",
+          "Konfigurasi jaringan",
+          "Troubleshooting",
+        ],
       },
     ],
   },
@@ -70,12 +74,29 @@ const aboutData: AboutDataItem[] = [
     info: [
       {
         title:
-          "D4 Teknik Informatika - Politeknik Negeri Lhokseumawe (IPK 3.87 - Cum Laude)",
-        stage: "2022 - 2026 (Lulus)",
+          "D4 Teknik Informatika - Politeknik Negeri Lhokseumawe",
+        stage: "2022 - 2026 · IPK 3,87 / 4,00",
       },
       {
         title: "Teknik Komputer dan Jaringan - SMK Negeri 1 Bireuen",
-        stage: "2019 - 2022",
+        stage: "2019 - 2022 · Nilai akhir 87",
+      },
+    ],
+  },
+  {
+    title: "bahasa",
+    info: [
+      { title: "Bahasa Indonesia", stage: "Native" },
+      { title: "Bahasa Inggris", stage: "Low intermediate" },
+      { title: "Bahasa Aceh", stage: "Aktif" },
+    ],
+  },
+  {
+    title: "program & pelatihan",
+    info: [
+      {
+        title: "Peserta Machine Learning - Coding Camp by DBS Foundation",
+        stage: "Januari - Juni 2025",
       },
     ],
   },
@@ -158,12 +179,13 @@ const About = () => {
             animate="show"
             className="max-w-sm xl:max-w-md mx-auto xl:mx-0 mb-6 xl:mb-10 px-2 xl:px-0 text-white/75 text-sm leading-relaxed"
           >
-            Lulusan Sarjana Terapan (D4) Teknik Informatika Politeknik Negeri
-            Lhokseumawe dengan predikat Cum Laude (IPK 3.87). Berfokus pada
-            Full-Stack Web Development dan penerapan Machine Learning, dengan
-            pengalaman industri di PT. Yageo TMSS Indonesia serta DBS Foundation
-            Coding Camp. Terbiasa memecahkan masalah rekayasa secara analitis,
-            disiplin, dan berorientasi pada clean code serta performa optimal.
+            Lulusan D4 Teknik Informatika Politeknik Negeri Lhokseumawe dengan
+            IPK 3,87/4,00. Mengembangkan aplikasi web end-to-end menggunakan
+            Python, Java, PHP, Go, dan JavaScript, serta membangun model
+            CNN, Multi-Label Decision Tree, dan Gradient Boosting. Melalui
+            Coding Camp by DBS Foundation, model mencapai akurasi di atas 85%
+            pada dataset 3.000-4.000 sampel. Berpengalaman dalam dukungan IT
+            industri dan memimpin dua proyek.
           </motion.p>
 
           <motion.div
@@ -178,25 +200,25 @@ const About = () => {
                   <CountUp start={0} end={3.87} decimals={2} duration={3} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
-                  IPK (Cum Laude)
+                  IPK / 4,00
                 </div>
               </div>
 
               <div className="relative flex-1 after:w-px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={13} duration={4} />+
+                  <CountUp start={0} end={5} duration={4} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
-                  Sertifikasi Resmi
+                  Proyek Portofolio
                 </div>
               </div>
 
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={4} />+
+                  <CountUp start={0} end={2} duration={4} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
-                  Pengalaman Industri
+                  Proyek Dipimpin
                 </div>
               </div>
             </div>
@@ -210,15 +232,17 @@ const About = () => {
           exit="hidden"
           className="relative z-20 flex min-w-0 w-full flex-col xl:max-w-[40%]"
         >
-          <div className="flex gap-x-3 sm:gap-x-4 xl:gap-x-2 mx-auto xl:mx-0 mb-4 overflow-x-auto pb-1 max-w-full xl:flex-nowrap xl:justify-between xl:overflow-visible">
+          <div className="mb-4 grid w-full grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-2">
             {aboutData.map((item, itemI) => (
               <button
                 type="button"
-                key={itemI}
-                className={`${
-                  index === itemI &&
-                  "text-accent after:w-full after:bg-accent after:transition-all after:duration-300"
-                } cursor-pointer capitalize text-sm xl:text-[13px] relative after:w-8 after:h-0.5 after:bg-white after:absolute after:-bottom-1 after:left-0 whitespace-nowrap shrink-0`}
+                key={item.title}
+                aria-pressed={index === itemI}
+                className={`min-h-10 rounded-lg border px-2 py-2 text-center text-[10px] font-medium capitalize leading-tight transition-colors sm:text-xs ${
+                  index === itemI
+                    ? "border-accent/40 bg-accent/10 text-accent"
+                    : "border-white/10 bg-white/5 text-white/60 hover:border-white/20 hover:text-white"
+                }`}
                 onClick={() => setIndex(itemI)}
               >
                 {item.title}
@@ -226,41 +250,58 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemI) => (
-              item.href ? (
+          <div className="flex w-full min-w-0 flex-col gap-3">
+            {aboutData[index].info.map((item) => {
+              const content = (
+                <>
+                  <div className="flex min-w-0 items-start justify-between gap-3">
+                    <h3 className="min-w-0 break-words text-left text-xs font-medium leading-relaxed text-white sm:text-sm">
+                      {item.title}
+                    </h3>
+                    {item.href && (
+                      <BsArrowRight className="mt-1 shrink-0 text-accent transition-transform group-hover:translate-x-1" />
+                    )}
+                  </div>
+                  {item.stage && (
+                    <p className="mt-1 text-left text-[11px] leading-relaxed text-white/55 sm:text-xs">
+                      {item.stage}
+                    </p>
+                  )}
+                  {item.details && (
+                    <ul className="mt-3 flex flex-wrap gap-1.5">
+                      {item.details.map((detail) => (
+                        <li
+                          key={detail}
+                          className="rounded-md border border-white/10 bg-white/5 px-2 py-1 text-[10px] leading-tight text-white/70 sm:text-[11px]"
+                        >
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </>
+              );
+
+              return item.href ? (
                 <Link
-                  key={itemI}
+                  key={item.title}
                   href={item.href}
-                  className="group flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60 rounded-lg px-3 py-2 -mx-3 transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-accent"
+                  className="group block w-full min-w-0 rounded-xl border border-white/10 bg-white/5 p-3 text-left transition-colors hover:border-accent/30 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-accent"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
-                  <BsArrowRight className="ml-1 text-accent transition-transform group-hover:translate-x-1" />
+                  {content}
                 </Link>
               ) : (
-                <div
-                  key={itemI}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                <article
+                  key={item.title}
+                  className="w-full min-w-0 rounded-xl border border-white/10 bg-white/5 p-3"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
-
-                  <div className="flex gap-x-4">
-                    {item.icons?.map((Icon, iconI) => (
-                      <div key={iconI} className="text-2xl text-white">
-                        <Icon />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )
-            ))}
+                  {content}
+                </article>
+              );
+            })}
 
             {aboutData[index].title === "sertifikasi" && (
-              <div className="pt-2">
+              <div className="pt-1">
                 <Link
                   href="/sertifikat"
                   className="relative z-20 inline-flex items-center gap-x-2 text-xs font-semibold text-accent hover:text-white bg-accent/10 hover:bg-accent border border-accent/30 px-4 py-2 rounded-full transition-all duration-300 group"

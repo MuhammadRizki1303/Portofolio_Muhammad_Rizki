@@ -1,12 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
-const ParticlesContainer = dynamic(
-  () => import("@/components/ParticlesContainer"),
-  { ssr: false }
-);
 import ProjectsBtn from "@/components/ProjectsBtn";
 import Avatar from "@/components/Avatar";
 import About from "@/app/about/page";
@@ -21,7 +16,7 @@ const Home = () => {
   return (
     <main>
       <section id="home" className="home-shell relative isolate min-h-screen overflow-hidden xl:min-h-screen xl:h-full">
-        <div className="relative z-10 w-full min-h-[calc(100svh-4.5rem)] bg-linear-to-r from-primary/5 via-transparent to-accent/5 xl:min-h-screen xl:h-full">
+        <div className="relative z-10 w-full min-h-[calc(100svh-4.5rem)] xl:min-h-screen xl:h-full">
           <div className="container mx-auto flex min-h-screen flex-col justify-center px-4 pb-20 pt-32 text-center sm:px-8 xl:min-h-screen xl:h-full xl:pb-0 xl:pt-56 xl:text-left">
           <motion.div
             variants={fadeIn("down", 0.15)}
@@ -31,7 +26,7 @@ const Home = () => {
             className="mx-auto mb-5 inline-flex w-fit items-center gap-x-2 rounded-full border border-accent/25 bg-accent/5 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-accent shadow-sm xl:mx-0"
           >
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span>AI-assisted software engineer · Indonesia</span>
+            <span>Full-Stack Developer · IT Support · Aceh, Indonesia</span>
           </motion.div>
 
           <motion.h1
@@ -52,7 +47,7 @@ const Home = () => {
             exit="hidden"
             className="mb-5 text-base font-medium tracking-wide text-white/70 md:text-xl"
           >
-            Software Engineer <span className="text-accent">&</span> AI Enthusiast
+            Full-Stack Web Developer <span className="text-accent">&</span> IT Support
           </motion.div>
 
           <motion.p
@@ -62,12 +57,11 @@ const Home = () => {
             exit="hidden"
             className="mx-auto mb-7 max-w-sm text-sm leading-relaxed text-white/60 md:text-[15px] xl:mx-0 xl:mb-8 xl:max-w-xl"
           >
-            Lulusan Sarjana Terapan Teknik Informatika dengan predikat Cum Laude (IPK 3.87).
-            Berfokus pada rekayasa perangkat lunak modern, pengembangan Full-Stack Web, dan
-            implementasi Machine Learning. Berpengalaman menangani infrastruktur IT industri di
-            PT. Yageo TMSS Indonesia serta membangun solusi cerdas di DBS Foundation Coding Camp.
-            Siap memberikan kontribusi optimal dengan arsitektur kode yang bersih, scalable, dan
-            berdampak nyata bagi pertumbuhan tim teknologi Anda.
+            Lulusan D4 Teknik Informatika Politeknik Negeri Lhokseumawe dengan IPK 3,87/4,00.
+            Berfokus pada pengembangan aplikasi web end-to-end dan dukungan infrastruktur IT,
+            dengan pengalaman Machine Learning melalui Coding Camp by DBS Foundation. Menguasai
+            Python, Java, PHP, Go, JavaScript, basis data, Docker, dan konfigurasi jaringan.
+            Lima proyek web dan IoT saya, dua di antaranya saya pimpin sebagai ketua tim.
           </motion.p>
 
           <motion.div
@@ -79,8 +73,8 @@ const Home = () => {
           >
             <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">Full-Stack Web</span>
             <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">Machine Learning</span>
-            <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">IT Infrastructure</span>
-            <span className="rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 font-medium text-accent">IPK 3.87 · Cum Laude</span>
+            <span className="rounded-md border border-white/10 bg-white/5 px-3 py-1.5">IT Support &amp; Jaringan</span>
+            <span className="rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 font-medium text-accent">IPK 3,87 / 4,00</span>
           </motion.div>
 
           {/* Keep the profile visual below the main message on smaller screens. */}
@@ -115,14 +109,11 @@ const Home = () => {
           </div>
         </div>
         <div className="pointer-events-none absolute inset-0 z-0 h-full w-full xl:right-0 xl:bottom-0 xl:w-[1200px]">
-          <div
-            role="img"
-            className="home-explosion w-full h-full absolute mix-blend-screen opacity-80 translate-z-0"
-            aria-hidden
-          />
-
-          <ParticlesContainer />
-
+          <div className="ambient-3d" aria-hidden="true">
+            <div className="ambient-3d__sphere" />
+            <div className="ambient-3d__ring" />
+            <div className="ambient-3d__ring ambient-3d__ring--inner" />
+          </div>
           <motion.div
             variants={fadeIn("up", 0.5)}
             initial="hidden"

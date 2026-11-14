@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
-import { FaReact, FaGithub, FaDatabase } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { SiArduino, SiMysql } from "react-icons/si";
 
 import Circles from "@/components/Circles";
@@ -13,7 +13,7 @@ const screenshots = [
   { src: "/projects/Smart Locker/Dashboard RFID.png", label: "Dashboard" },
   { src: "/projects/Smart Locker/Design RFID.png", label: "Desain sistem" },
   { src: "/projects/Smart Locker/Face Recognice Test.png", label: "Uji face recognition" },
-  { src: "/projects/Smart Locker/Implementasi RFID.png", label: "Implementasi RFID" },
+  { src: "/projects/Smart Locker/Implementasi RFID.png", label: "Implementasi hardware" },
   { src: "/projects/Smart Locker/web RFID.png", label: "Antarmuka web" },
 ];
 
@@ -56,10 +56,9 @@ const SmartLockerPage = () => {
             </h1>
             <p className="text-white/70 leading-relaxed text-sm mb-6">
               Sistem loker pintar berbasis Internet of Things (IoT) yang
-              mengintegrasikan mikrokontroler hardware dengan antarmuka web
-              modern. Memungkinkan kontrol akses digital nirsentuh (touchless)
-              menggunakan autentikasi QR code dan PIN dinamis dengan
-              sinkronisasi status real-time.
+              menghubungkan antarmuka web pengelolaan loker dengan perangkat
+              ESP32. Proyek ini menggunakan autentikasi QR Code dan komunikasi
+              HTTP/MQTT untuk memantau status loker secara real-time.
             </p>
 
             {/* Tech Stack */}
@@ -68,8 +67,7 @@ const SmartLockerPage = () => {
                 { Icon: SiArduino, label: "Arduino / ESP" },
                 { Icon: FaReact, label: "React" },
                 { Icon: SiMysql, label: "MySQL" },
-                { Icon: FaDatabase, label: "Database" },
-                { Icon: FaGithub, label: "GitHub" },
+                { Icon: SiArduino, label: "ESP32" },
               ].map(({ Icon, label }, i) => (
                 <div
                   key={i}
@@ -79,6 +77,9 @@ const SmartLockerPage = () => {
                   <span>{label}</span>
                 </div>
               ))}
+              <span className="flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+                HTTP/MQTT
+              </span>
             </div>
 
             {/* Info ringkas */}
@@ -86,7 +87,7 @@ const SmartLockerPage = () => {
               {[
                 { label: "Kategori", value: "IoT & Web" },
                 { label: "Tahun", value: "2024" },
-                { label: "Tim", value: "4 Orang" },
+                { label: "Peran", value: "Ketua Tim" },
                 { label: "Status", value: "Selesai" },
               ].map(({ label, value }, i) => (
                 <div

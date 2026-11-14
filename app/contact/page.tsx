@@ -14,6 +14,7 @@ import {
   RiGithubLine,
   RiLinkedinLine,
   RiMapPinLine,
+  RiPhoneLine,
   RiCheckboxCircleLine,
 } from "react-icons/ri";
 
@@ -340,6 +341,13 @@ const Contact = () => {
 
   const contactList = [
     {
+      name: "Telepon",
+      value: "+62 822-7922-6814",
+      link: "tel:+6282279226814",
+      Icon: RiPhoneLine,
+      label: "Hubungi langsung",
+    },
+    {
       name: "Email",
       value: "muhammad.rizki1303@gmail.com",
       link: "mailto:muhammad.rizki1303@gmail.com",
@@ -382,7 +390,8 @@ const Contact = () => {
             <p className="text-white/70 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto xl:mx-0">
               Tertarik untuk berkolaborasi, mendiskusikan peluang proyek, atau
               memiliki pertanyaan? Jangan ragu untuk menghubungi saya melalui
-              informasi kontak di bawah ini atau melalui formulir pesan.
+              informasi kontak di bawah ini atau melalui formulir pesan. Saat
+              ini berdomisili di Bireuen, Aceh.
             </p>
 
             {/* Daftar Kontak Langsung */}
