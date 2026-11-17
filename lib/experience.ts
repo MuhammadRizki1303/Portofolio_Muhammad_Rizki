@@ -50,6 +50,22 @@ export const experiences: Experience[] = [
         src: "/projects/Inventory IT/Login project magang.png",
         label: "Halaman login sistem",
       },
+      {
+        src: "/experience/yageo-tmss/yageo-cabling-work.jpeg",
+        label: "Penataan kabel jaringan",
+      },
+      {
+        src: "/experience/yageo-tmss/yageo-team-documentation.jpeg",
+        label: "Dokumentasi bersama tim PT Yageo TMSS Indonesia",
+      },
+      {
+        src: "/experience/yageo-tmss/yageo-it-support-work.jpeg",
+        label: "Konfigurasi dan troubleshooting perangkat",
+      },
+      {
+        src: "/experience/yageo-tmss/yageo-device-support.jpeg",
+        label: "Dukungan teknis perangkat kerja",
+      },
     ],
   },
   {

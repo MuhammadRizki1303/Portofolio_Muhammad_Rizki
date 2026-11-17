@@ -8,7 +8,7 @@ import { experiences } from "@/lib/experience";
 
 export default function ExperiencePage() {
   return (
-    <div className="page-scroll min-h-screen overflow-y-auto bg-primary/30 py-24 pb-24 xl:py-36 xl:pb-12">
+    <div className="page-scroll min-h-screen overflow-x-hidden overflow-y-auto bg-primary/30 py-24 pb-24 xl:py-36 xl:pb-12">
       <Circles />
       <main className="container relative z-10 mx-auto px-4">
         <div className="mx-auto mb-10 max-w-3xl text-center">
