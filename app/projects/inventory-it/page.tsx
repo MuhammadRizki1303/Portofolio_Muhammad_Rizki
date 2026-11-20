@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 
 import Circles from "@/components/Circles";
+import ProjectGallery from "@/components/ProjectGallery";
 import { fadeIn } from "@/variants";
 const screenshots = [
   { src: "/projects/Inventory IT/Asset project magang.png", label: "Halaman aset" },
@@ -74,6 +74,9 @@ const InventoryITPage = () => {
                   <span>{label}</span>
                 </div>
               ))}
+              <span className="flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+                YOLOv12
+              </span>
             </div>
 
             {/* Info ringkas */}
@@ -107,24 +110,15 @@ const InventoryITPage = () => {
             exit="hidden"
             className="grid grid-cols-2 gap-3"
           >
-            {screenshots.map(({ src, label }, i) => (
-              <div
-                key={i}
-                className="relative overflow-hidden rounded-xl border border-white/10 group aspect-video bg-white/5"
-              >
-                <Image
-                  src={src}
-                  alt={`${label} - Inventory IT Assets`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            ))}
+            <ProjectGallery
+              screenshots={screenshots}
+              projectTitle="Inventory IT Assets"
+            />
           </motion.div>
         </div>
 
         {/* BOTTOM SECTION: Deskripsi, Fitur, Kontribusi */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
           <motion.div
             variants={fadeIn("up", 0.3)}
             initial="hidden"
@@ -185,6 +179,24 @@ const InventoryITPage = () => {
                 format PDF dan Excel
               </li>
             </ul>
+          </motion.div>
+
+          <motion.div
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="bg-white/5 border border-white/10 rounded-xl p-6"
+          >
+            <h3 className="text-base font-semibold text-accent mb-3">
+              Machine Learning
+            </h3>
+            <p className="text-white/70 text-sm leading-relaxed">
+              YOLOv12 mendeteksi objek pada foto, memperkirakan kelas aset, dan
+              menandai lokasinya dengan bounding box. Informasi visual ini dapat
+              membantu proses identifikasi aset sebelum data aset dikelola di
+              sistem PHP dan MySQL.
+            </p>
           </motion.div>
         </div>
       </div>

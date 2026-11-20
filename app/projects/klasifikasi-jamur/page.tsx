@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 import { FaPython } from "react-icons/fa";
 import { SiTensorflow, SiKeras } from "react-icons/si";
 
 import Circles from "@/components/Circles";
+import ProjectGallery from "@/components/ProjectGallery";
 import { fadeIn } from "@/variants";
 const screenshots = [
   { src: "/projects/Klasifikasi Jamur/Dashboard Jamur.png", label: "Dashboard" },
@@ -108,24 +108,15 @@ const KlasifikasiJamurPage = () => {
             exit="hidden"
             className="grid grid-cols-2 gap-3"
           >
-            {screenshots.map(({ src, label }, i) => (
-              <div
-                key={i}
-                className="relative overflow-hidden rounded-xl border border-white/10 group aspect-video bg-white/5"
-              >
-                <Image
-                  src={src}
-                  alt={`${label} - Klasifikasi Jamur CNN`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            ))}
+            <ProjectGallery
+              screenshots={screenshots}
+              projectTitle="Klasifikasi Jamur CNN"
+            />
           </motion.div>
         </div>
 
         {/* BOTTOM SECTION: Deskripsi, Fitur, Kontribusi */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
           <motion.div
             variants={fadeIn("up", 0.3)}
             initial="hidden"
@@ -204,6 +195,25 @@ const KlasifikasiJamurPage = () => {
                 Mengintegrasikan model AI ke dalam antarmuka web demo aplikasi
               </li>
             </ul>
+          </motion.div>
+
+          <motion.div
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="bg-white/5 border border-white/10 rounded-xl p-6"
+          >
+            <h3 className="text-base font-semibold text-accent mb-3">
+              Machine Learning
+            </h3>
+            <p className="text-white/70 text-sm leading-relaxed">
+              CNN berbasis TensorFlow dan Keras mempelajari pola visual dari
+              citra jamur melalui lapisan konvolusi, lalu menggunakannya untuk
+              menentukan kelas gambar. Sebelum prediksi, gambar diubah ukurannya
+              dan dinormalisasi; kualitas klasifikasi ditinjau dengan precision,
+              recall, F1-score, dan confusion matrix.
+            </p>
           </motion.div>
         </div>
       </div>

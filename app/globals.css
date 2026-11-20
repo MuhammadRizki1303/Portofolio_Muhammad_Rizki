@@ -40,6 +40,131 @@ html {
   background-color: var(--color-primary);
 }
 
+.projects-layout .page-scroll {
+  padding-bottom: max(7rem, calc(5rem + env(safe-area-inset-bottom)));
+  background-image:
+    radial-gradient(ellipse at 8% 10%, rgba(154, 219, 200, 0.1), transparent 34rem),
+    radial-gradient(ellipse at 92% 38%, rgba(193, 185, 232, 0.08), transparent 30rem),
+    linear-gradient(180deg, rgba(20, 38, 44, 0.32), rgba(20, 38, 44, 0.08));
+}
+
+.projects-layout .page-scroll > .container {
+  max-width: 88rem;
+  padding-right: clamp(1rem, 3vw, 2rem);
+  padding-left: clamp(1rem, 3vw, 2rem);
+}
+
+.projects-layout .page-scroll a[href="/work"] {
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.045);
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.projects-layout .page-scroll a[href="/work"]:hover {
+  transform: translateX(-2px);
+  border-color: rgba(154, 219, 200, 0.42);
+  background: rgba(154, 219, 200, 0.08);
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 {
+  align-items: stretch;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 > div:first-child {
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025)),
+    rgba(24, 43, 49, 0.62);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(1rem);
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  letter-spacing: -0.045em;
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 h1 span {
+  background: linear-gradient(110deg, #9adbc8 10%, #c1b9e8 90%);
+  background-clip: text;
+  color: transparent;
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 p {
+  max-width: 42rem;
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 > div:first-child > div:last-child > div {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.045);
+  padding: 1rem;
+}
+
+.projects-layout .page-scroll .container > .grid.mb-10 > div:nth-child(2) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  gap: 0.85rem;
+}
+
+.projects-layout .page-scroll button[aria-label^="Perbesar"] {
+  aspect-ratio: 16 / 10;
+  border-color: rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(154, 219, 200, 0.08), transparent 70%),
+    rgba(9, 20, 24, 0.58);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.projects-layout .page-scroll button[aria-label^="Perbesar"]:hover {
+  transform: translateY(-3px);
+  border-color: rgba(154, 219, 200, 0.52);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28);
+}
+
+.projects-layout .page-scroll .container > .grid:last-child > :is(div, section) {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02)),
+    rgba(24, 43, 49, 0.56);
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.75rem);
+}
+
+.projects-layout .page-scroll .container > .grid:last-child h2,
+.projects-layout .page-scroll .container > .grid:last-child h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 639px) {
+  .projects-layout .page-scroll .container > .grid.mb-10 > div:nth-child(2) {
+    gap: 0.6rem;
+  }
+}
+
 .ambient-3d {
   position: absolute;
   top: 18%;

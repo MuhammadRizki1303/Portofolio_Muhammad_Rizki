@@ -10,6 +10,7 @@ export type Project = {
   technologies: string[];
   features: string[];
   contributions: string[];
+  machineLearning?: string;
 };
 
 export const additionalProjects: Project[] = [
@@ -23,12 +24,17 @@ export const additionalProjects: Project[] = [
       { src: "/projects/Chatku/2.jpeg", label: "Percakapan" },
       { src: "/projects/Chatku/3.jpeg", label: "Daftar kontak" },
       { src: "/projects/Chatku/4.jpeg", label: "Pengelolaan pesan" },
+      { src: "/projects/Chatku/5.jpeg", label: "Tampilan aplikasi 5" },
+      { src: "/projects/Chatku/6.jpeg", label: "Tampilan aplikasi 6" },
+      { src: "/projects/Chatku/7.jpeg", label: "Tampilan aplikasi 7" },
+      { src: "/projects/Chatku/8.jpeg", label: "Tampilan aplikasi 8" },
+      { src: "/projects/Chatku/9.jpeg", label: "Tampilan aplikasi 9" },
     ],
     description:
       "Aplikasi pesan instan yang mengutamakan keamanan dan privasi, dilengkapi fitur percakapan serta klasifikasi pesan berbasis machine learning.",
     category: "Aplikasi Web",
     focus: "Pesan instan & keamanan",
-    technologies: ["PHP", "React", "MySQL", "Machine Learning"],
+    technologies: ["LSTM", "PHP", "React", "MySQL"],
     features: [
       "Enkripsi end-to-end dan verifikasi akun",
       "Percakapan pribadi dan daftar kontak",
@@ -38,8 +44,10 @@ export const additionalProjects: Project[] = [
     contributions: [
       "Membangun aplikasi pesan instan dengan fitur keamanan dan privasi",
       "Mengembangkan percakapan pribadi, daftar kontak, dan pengelolaan pesan",
-      "Mengintegrasikan model machine learning untuk klasifikasi pesan spam",
+      "Mengintegrasikan model LSTM untuk klasifikasi pesan spam",
     ],
+    machineLearning:
+      "LSTM (Long Short-Term Memory) membaca pesan sebagai urutan kata dan mempertahankan konteks kata sebelumnya. Pola bahasa tersebut digunakan untuk membedakan pesan spam dari percakapan biasa.",
   },
   {
     slug: "website-kopi-gayo",
@@ -51,6 +59,15 @@ export const additionalProjects: Project[] = [
       { src: "/projects/KopiGayo/2.png", label: "Katalog produk" },
       { src: "/projects/KopiGayo/3.png", label: "Informasi produk" },
       { src: "/projects/KopiGayo/4.png", label: "Profil Kopi Gayo" },
+      { src: "/projects/KopiGayo/5.png", label: "Tampilan website 5" },
+      { src: "/projects/KopiGayo/6.png", label: "Tampilan website 6" },
+      { src: "/projects/KopiGayo/7.png", label: "Tampilan website 7" },
+      { src: "/projects/KopiGayo/8.png", label: "Tampilan website 8" },
+      { src: "/projects/KopiGayo/9.png", label: "Tampilan website 9" },
+      { src: "/projects/KopiGayo/10.png", label: "Tampilan website 10" },
+      { src: "/projects/KopiGayo/11.png", label: "Tampilan website 11" },
+      { src: "/projects/KopiGayo/12.png", label: "Tampilan website 12" },
+      { src: "/projects/KopiGayo/13.png", label: "Tampilan website 13" },
     ],
     description:
       "Website profil merek dan katalog kopi Gayo, Aceh, yang membantu pelanggan mengenal produk dan menemukan kopi sesuai preferensi.",
@@ -68,6 +85,8 @@ export const additionalProjects: Project[] = [
       "Mengembangkan pencarian dan penyaringan produk berdasarkan atributnya",
       "Mengintegrasikan model machine learning untuk rekomendasi produk",
     ],
+    machineLearning:
+      "Sistem rekomendasi memanfaatkan atribut kopi seperti jenis, bentuk, kemasan, dan kategori untuk menampilkan produk yang paling sesuai dengan pilihan pelanggan.",
   },
   {
     slug: "sahamiq",
@@ -91,23 +110,45 @@ export const additionalProjects: Project[] = [
         src: "/projects/SAHAMIQ - Dashboard Analisis/4.png",
         label: "Visualisasi data",
       },
+      {
+        src: "/projects/SAHAMIQ - Dashboard Analisis/5.png",
+        label: "Tampilan analisis 5",
+      },
+      {
+        src: "/projects/SAHAMIQ - Dashboard Analisis/6.png",
+        label: "Tampilan analisis 6",
+      },
+      {
+        src: "/projects/SAHAMIQ - Dashboard Analisis/7.png",
+        label: "Tampilan analisis 7",
+      },
+      {
+        src: "/projects/SAHAMIQ - Dashboard Analisis/8.png",
+        label: "Tampilan analisis 8",
+      },
+      {
+        src: "/projects/SAHAMIQ - Dashboard Analisis/9.png",
+        label: "Tampilan analisis 9",
+      },
     ],
     description:
       "Platform monitoring dan analisis saham dengan berbagai alat bantu untuk meninjau emiten, memantau harga, dan membaca indikator kinerja keuangan.",
     category: "Aplikasi Web",
     focus: "Analisis & monitoring saham",
-    technologies: ["PHP", "Laravel", "MySQL", "Machine Learning"],
+    technologies: ["Linear Regression", "PHP", "Laravel", "MySQL"],
     features: [
       "Dashboard, screener, dan riset emiten",
       "Watchlist dan notifikasi harga sesuai target",
       "Grafik serta indikator kinerja keuangan",
-      "Klasifikasi tren pergerakan saham menggunakan machine learning",
+      "Analisis tren pergerakan saham menggunakan Linear Regression",
     ],
     contributions: [
       "Membangun platform monitoring saham dengan dashboard dan screener",
       "Mengembangkan fitur riset emiten, watchlist, dan notifikasi target harga",
-      "Mengintegrasikan model machine learning untuk klasifikasi tren saham",
+      "Mengintegrasikan Linear Regression untuk mendukung analisis tren saham",
     ],
+    machineLearning:
+      "Linear Regression memodelkan hubungan antara indikator saham dan pergerakan nilainya untuk memperkirakan arah tren. Hasilnya membantu pengguna meninjau pola historis bersama grafik dan indikator pada dashboard, bukan menjadi jaminan pergerakan harga berikutnya.",
   },
   {
     slug: "monthlab",
@@ -123,18 +164,20 @@ export const additionalProjects: Project[] = [
       "Dashboard interaktif untuk memantau data dan capaian wilayah desa, dilengkapi visualisasi serta pengelolaan laporan.",
     category: "Aplikasi Web",
     focus: "Monitoring & analisis wilayah",
-    technologies: ["PHP", "React", "MySQL", "Machine Learning"],
+    technologies: ["Clustering", "PHP", "React", "MySQL"],
     features: [
       "Pencarian data dan pengelolaan capaian wilayah",
       "Impor data dari file Excel",
       "Visualisasi data dalam bentuk grafik dan ekspor laporan",
-      "Clustering wilayah berdasarkan capaian menggunakan machine learning",
+      "Clustering wilayah berdasarkan capaian",
     ],
     contributions: [
       "Membangun dashboard interaktif untuk monitoring data wilayah desa",
       "Mengembangkan pencarian data, pengelolaan capaian, impor Excel, dan ekspor laporan",
-      "Menerapkan machine learning untuk pengelompokan wilayah berdasarkan capaian",
+      "Menerapkan clustering untuk pengelompokan wilayah berdasarkan capaian",
     ],
+    machineLearning:
+      "Clustering mengelompokkan wilayah dengan capaian yang serupa tanpa label kelas yang ditentukan sebelumnya. Hasil kelompok membantu membandingkan perkembangan wilayah dan menemukan pola capaian.",
   },
   {
     slug: "smartumkm",
@@ -158,12 +201,32 @@ export const additionalProjects: Project[] = [
         src: "/projects/SmartUMKM - Dashboard Manajemen Usaha/4.png",
         label: "Laporan analitik",
       },
+      {
+        src: "/projects/SmartUMKM - Dashboard Manajemen Usaha/5.png",
+        label: "Tampilan usaha 5",
+      },
+      {
+        src: "/projects/SmartUMKM - Dashboard Manajemen Usaha/6.png",
+        label: "Tampilan usaha 6",
+      },
+      {
+        src: "/projects/SmartUMKM - Dashboard Manajemen Usaha/7.png",
+        label: "Tampilan usaha 7",
+      },
+      {
+        src: "/projects/SmartUMKM - Dashboard Manajemen Usaha/8.png",
+        label: "Tampilan usaha 8",
+      },
+      {
+        src: "/projects/SmartUMKM - Dashboard Manajemen Usaha/9.png",
+        label: "Tampilan usaha 9",
+      },
     ],
     description:
       "Platform terintegrasi untuk membantu UMKM mengelola operasional usaha serta meninjau kinerja bisnis melalui laporan analitik.",
     category: "Aplikasi Web",
     focus: "Operasional & analitik bisnis",
-    technologies: ["PHP", "Laravel", "React", "MySQL", "Machine Learning"],
+    technologies: ["YOLOv11", "PHP", "Laravel", "React", "MySQL"],
     features: [
       "Kasir/POS, inventaris, produksi, dan resep",
       "Pengelolaan keuangan, pelanggan, dan pegawai",
@@ -175,5 +238,7 @@ export const additionalProjects: Project[] = [
       "Mengembangkan modul kasir, inventaris, produksi, keuangan, pelanggan, dan pegawai",
       "Mengintegrasikan rekomendasi produk dan prediksi penjualan dengan machine learning",
     ],
+    machineLearning:
+      "YOLOv11 mendeteksi objek pada gambar dengan memprediksi kelas dan lokasi objek dalam satu proses inferensi. Pada sisi analitik usaha, model rekomendasi membantu memilih produk yang relevan, sementara prediksi penjualan memperkirakan tren dari catatan transaksi untuk mendukung perencanaan stok.",
   },
 ];

@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 
 import Circles from "@/components/Circles";
+import ProjectGallery from "@/components/ProjectGallery";
 import type { Project } from "@/lib/projects";
 import { fadeIn } from "@/variants";
 
@@ -82,23 +82,14 @@ const ProjectDetail = ({ project }: { project: Project }) => {
             exit="hidden"
             className="grid grid-cols-2 gap-3"
           >
-            {project.screenshots.map(({ src, label }) => (
-              <div
-                key={src}
-                className="group relative aspect-video overflow-hidden rounded-xl border border-white/10 bg-white/5"
-              >
-                <Image
-                  src={src}
-                  alt={`${label} - ${project.title}`}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            ))}
+            <ProjectGallery
+              screenshots={project.screenshots}
+              projectTitle={project.title}
+            />
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 pb-8 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 pb-8 xl:grid-cols-3">
           <motion.section
             variants={fadeIn("up", 0.3)}
             initial="hidden"
@@ -132,6 +123,23 @@ const ProjectDetail = ({ project }: { project: Project }) => {
               ))}
             </ul>
           </motion.section>
+
+          {project.machineLearning && (
+            <motion.section
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="rounded-xl border border-white/10 bg-white/5 p-6"
+            >
+              <h2 className="mb-3 text-base font-semibold text-accent">
+                Machine Learning
+              </h2>
+              <p className="text-sm leading-relaxed text-white/70">
+                {project.machineLearning}
+              </p>
+            </motion.section>
+          )}
         </div>
       </div>
     </div>

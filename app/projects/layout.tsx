@@ -4,7 +4,7 @@ export default function ProjectsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full min-h-screen">
+    <div className="projects-layout w-full min-h-screen">
       {children}
     </div>
   );
