@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
-import { FaPython, FaGithub, FaReact } from "react-icons/fa";
-import { SiTensorflow, SiKeras, SiJupyter, SiScikitlearn } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { SiTensorflow, SiKeras } from "react-icons/si";
 
 import Circles from "@/components/Circles";
 import { fadeIn } from "@/variants";
@@ -63,14 +63,9 @@ const KlasifikasiJamurPage = () => {
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-6">
               {[
-                { Icon: FaReact, label: "React" },
                 { Icon: FaPython, label: "Python" },
                 { Icon: SiTensorflow, label: "TensorFlow" },
                 { Icon: SiKeras, label: "Keras" },
-                { Icon: SiScikitlearn, label: "scikit-learn" },
-                { Icon: SiJupyter, label: "Jupyter" },
-                { Icon: FaReact, label: "Demo Web" },
-                { Icon: FaGithub, label: "GitHub" },
               ].map(({ Icon, label }, i) => (
                 <div
                   key={i}

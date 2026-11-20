@@ -64,7 +64,6 @@ const SmartLockerPage = () => {
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-6">
               {[
-                { Icon: SiArduino, label: "Arduino / ESP" },
                 { Icon: FaReact, label: "React" },
                 { Icon: SiMysql, label: "MySQL" },
                 { Icon: SiArduino, label: "ESP32" },

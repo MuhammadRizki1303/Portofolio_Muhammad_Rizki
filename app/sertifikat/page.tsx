@@ -72,13 +72,21 @@ const CERTIFICATES_DATA: CertificateItem[] = [
     tags: ["SKL Resmi", "Transkrip Nilai", "IPK 3.87", "Teknik Informatika"],
   },
   {
-    id: "toefl-test",
-    title: "Certificate of Achievement English Proficiency Test (TOEFL)",
-    issuer: "Language Centre Politeknik Negeri Lhokseumawe",
+    id: "ef-set-certificate",
+    title: "EF SET English Certificate (B2 Upper Intermediate)",
+    issuer: "EF SET",
     category: "Kompetensi & Vokasi",
-    fileName: "TOEFL.pdf",
-    previewImage: "/certificates/previews/TOEFL.png",
-    tags: ["TOEFL Test", "English Proficiency", "Skor 407", "Language Centre"],
+    fileName: "EF_SET_Certificate.pdf",
+    previewImage: "/certificates/previews/EF_SET_Certificate.png",
+    tags: [
+      "EF SET",
+      "CEFR B2",
+      "Skor 57/100",
+      "Reading C2",
+      "Listening B1",
+      "Writing B2",
+      "Speaking B1",
+    ],
   },
   {
     id: "magang-simbadda",
@@ -533,7 +541,11 @@ const SertifikatPage = () => {
                           alt={`Pratinjau Sertifikat ${cert.title}`}
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-cover object-top group-hover/preview:scale-105 transition-transform duration-500"
+                          className={`${
+                            cert.id === "ef-set-certificate"
+                              ? "object-contain"
+                              : "object-cover object-top"
+                          } group-hover/preview:scale-105 transition-transform duration-500`}
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
@@ -681,7 +693,13 @@ const SertifikatPage = () => {
               {/* Modal Body: High Resolution Preview Image */}
               <div className="p-4 overflow-y-auto flex items-center justify-center bg-black/40 min-h-[300px]">
                 {activeModalCert.previewImage ? (
-                  <div className="relative w-full max-w-3xl aspect-[1.414/1] rounded-lg overflow-hidden border border-white/20 shadow-xl bg-white">
+                  <div
+                    className={`relative w-full ${
+                      activeModalCert.id === "ef-set-certificate"
+                        ? "max-w-lg aspect-[595/843]"
+                        : "max-w-3xl aspect-[1.414/1]"
+                    } rounded-lg overflow-hidden border border-white/20 shadow-xl bg-white`}
+                  >
                     <Image
                       src={activeModalCert.previewImage}
                       alt={activeModalCert.title}

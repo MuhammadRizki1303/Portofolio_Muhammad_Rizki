@@ -35,6 +35,8 @@ const aboutData: AboutDataItem[] = [
           "PHP",
           "Go",
           "JavaScript",
+          "React.js",
+          "Laravel",
           "OOP",
           "Design Patterns",
           "REST API",
@@ -87,7 +89,7 @@ const aboutData: AboutDataItem[] = [
     title: "bahasa",
     info: [
       { title: "Bahasa Indonesia", stage: "Native" },
-      { title: "Bahasa Inggris", stage: "Low intermediate" },
+      { title: "Bahasa Inggris", stage: "B2 Upper Intermediate · EF SET 57/100" },
       { title: "Bahasa Aceh", stage: "Aktif" },
     ],
   },
@@ -206,7 +208,7 @@ const About = () => {
 
               <div className="relative flex-1 after:w-px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={5} duration={4} />
+                  <CountUp start={0} end={10} duration={4} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
                   Proyek Portofolio

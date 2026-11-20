@@ -61,7 +61,8 @@ const Home = () => {
             Berfokus pada pengembangan aplikasi web end-to-end dan dukungan infrastruktur IT,
             dengan pengalaman Machine Learning melalui Coding Camp by DBS Foundation. Menguasai
             Python, Java, PHP, Go, JavaScript, basis data, Docker, dan konfigurasi jaringan.
-            Lima proyek web dan IoT saya, dua di antaranya saya pimpin sebagai ketua tim.
+            Sepuluh proyek web, IoT, dan machine learning saya mencakup React dan Laravel,
+            dua di antaranya saya pimpin sebagai ketua tim.
           </motion.p>
 
           <motion.div
